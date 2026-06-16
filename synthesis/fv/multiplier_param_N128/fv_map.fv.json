@@ -3486,20 +3486,20 @@
 "object":"/designs/multiplier_param_N128/instances_seq/state_reg_1",
 "type":"instance"},
 {"index": "1", 
- "date": "Thu Jun 11 23:32:14 UTC 2026",
- "seconds": 1781220734.820253,
+ "date": "Tue Jun 16 23:15:53 UTC 2026",
+ "seconds": 1781651753.4302769,
  "netlist": "fv/multiplier_param_N128/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/gabriel.kaizer/Downloads/testa_padrao_scan/synthesis/fv/multiplier_param_N128/fv_map.v.gz", 
- "netlist_mtime": "1781220734", 
- "netlist_timestamp": "Thu Jun 11 23:32:14 UTC 2026", 
- "netlist_size": "57028", 
- "netlist_cksum": "4136593951", 
+ "netlist_mtime": "1781651752", 
+ "netlist_timestamp": "Tue Jun 16 23:15:52 UTC 2026", 
+ "netlist_size": "57027", 
+ "netlist_cksum": "3490882692", 
  "design_name": "multiplier_param_N128", 
  "synth_workdir": "/home/gabriel.kaizer/Downloads/testa_padrao_scan/synthesis", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.485558 
+ "write_verif_file_runtime": 0.45974699999999996 
  }
 ]

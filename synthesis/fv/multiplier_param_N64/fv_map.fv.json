@@ -1881,20 +1881,20 @@
 "object":"/designs/multiplier_param_N64/instances_seq/state_reg_1",
 "type":"instance"},
 {"index": "1", 
- "date": "Thu Jun 11 23:52:01 UTC 2026",
- "seconds": 1781221921.1266289,
+ "date": "Tue Jun 16 23:14:21 UTC 2026",
+ "seconds": 1781651661.4768238,
  "netlist": "fv/multiplier_param_N64/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/gabriel.kaizer/Downloads/testa_padrao_scan/synthesis/fv/multiplier_param_N64/fv_map.v.gz", 
- "netlist_mtime": "1781221920", 
- "netlist_timestamp": "Thu Jun 11 23:52:00 UTC 2026", 
- "netlist_size": "27896", 
- "netlist_cksum": "360778382", 
+ "netlist_mtime": "1781651661", 
+ "netlist_timestamp": "Tue Jun 16 23:14:21 UTC 2026", 
+ "netlist_size": "27895", 
+ "netlist_cksum": "1871652455", 
  "design_name": "multiplier_param_N64", 
  "synth_workdir": "/home/gabriel.kaizer/Downloads/testa_padrao_scan/synthesis", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.42987899999999996 
+ "write_verif_file_runtime": 0.407562 
  }
 ]

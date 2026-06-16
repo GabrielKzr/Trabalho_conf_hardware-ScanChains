@@ -1076,20 +1076,20 @@
 "object":"/designs/multiplier_param_N32/instances_seq/count_reg_0",
 "type":"instance"},
 {"index": "1", 
- "date": "Thu Jun 11 23:30:37 UTC 2026",
- "seconds": 1781220637.570803,
+ "date": "Tue Jun 16 23:13:11 UTC 2026",
+ "seconds": 1781651591.590128,
  "netlist": "fv/multiplier_param_N32/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/gabriel.kaizer/Downloads/testa_padrao_scan/synthesis/fv/multiplier_param_N32/fv_map.v.gz", 
- "netlist_mtime": "1781220637", 
- "netlist_timestamp": "Thu Jun 11 23:30:37 UTC 2026", 
- "netlist_size": "13892", 
- "netlist_cksum": "3256698113", 
+ "netlist_mtime": "1781651590", 
+ "netlist_timestamp": "Tue Jun 16 23:13:10 UTC 2026", 
+ "netlist_size": "13891", 
+ "netlist_cksum": "2248699672", 
  "design_name": "multiplier_param_N32", 
  "synth_workdir": "/home/gabriel.kaizer/Downloads/testa_padrao_scan/synthesis", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.37306999999999996 
+ "write_verif_file_runtime": 0.725602 
  }
 ]

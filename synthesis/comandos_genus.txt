@@ -5,7 +5,11 @@
 ##############################################################
 
 if {![info exists N]} {
-    set N 16
+    if {$argc > 0} {
+        set N [lindex $argv 0]
+    } else {
+        set N 16
+    }
 }
 
 ## 1) load synthesis configuration, read description and elaborate design 
@@ -22,11 +26,13 @@ syn_generic
 syn_map
 syn_opt 
 
-## 4) reports
-report_area  > rep_busca_padrao.txt
-report_gates >> rep_busca_padrao.txt
-report_timing >> rep_busca_padrao.txt
-report_power  -unit mW >> rep_busca_padrao.txt
+set report_file "reports/rep_busca_padrao${N}.txt"
+
+## 4) Reports
+report_area  >  $report_file
+report_gates >> $report_file
+report_timing >> $report_file
+report_power -unit mW >> $report_file
 
 ## 5) insert scan chains
 include dft_setup.tcl

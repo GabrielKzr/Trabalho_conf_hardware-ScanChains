@@ -6,7 +6,7 @@ Multiplicador serial parametrizável em SystemVerilog, sintetizado na tecnologia
 
 O módulo implementa multiplicação por deslocamento e acumulação (shift-and-add). A cada ciclo de clock, o bit menos significativo do operando B é testado; se for 1, o valor de A deslocado é somado ao acumulador. Após N ciclos, o resultado está disponível em `out` e `done` é asserted por um ciclo.
 
-### Interface
+## Interface
 
 ```systemverilog
 module multiplier_param #(
@@ -22,73 +22,54 @@ module multiplier_param #(
 );
 ```
 
-### Funcionamento
+## Funcionamento
 
-A FSM possui três estados: `IDLE`, `RUN` e `DONE`. Ao receber `start`, o módulo carrega os operandos nos shift registers e inicia a contagem. O acumulador soma `par_out_a` ao resultado sempre que `par_out_b[0] == 1`. Após N+1 ciclos, transiciona para `DONE` e pulsa `done`.
-
----
+A FSM possui três estados: IDLE, RUN e DONE. Ao receber start, o módulo carrega os operandos nos shift registers e inicia a contagem. O acumulador soma par_out_a ao resultado sempre que par_out_b[0] == 1. Após N+1 ciclos, transiciona para DONE e pulsa done.
 
 ## Resultados de síntese — Genus 21.12, STM 65nm GPSVT, 500 MHz
 
-| N  | Saída (bits) | Cell Area | Leaf Instances | Slack (ps) | Failing Paths |
-|----|-------------|-----------|----------------|------------|---------------|
-| 16 | 32          | 1.965     | 328            | 0          | 0             |
-| 32 | 64          | 4.061     | 778            | 0          | 0             |
-| 64 | 128         | —         | —              | 0          | 0             |
-| 128| 256         | —         | —              | 0          | 0             |
+| N   | Saída (bits) | Cell Count | Cell Area | Net Area | Total Area | Slack (ps) |
+|-----|-------------:|-----------:|----------:|---------:|-----------:|-----------:|
+| 16  | 32           | 309        | 1731.600  | 682.132  | 2413.732   | 0          |
+| 32  | 64           | 746        | 3621.800  | 1610.773 | 5232.573   | 1          |
+| 64  | 128          | 1563       | 7335.120  | 3366.741 | 10701.861  | 0          |
+| 128 | 256          | 3209       | 14672.840 | 6922.840 | 21595.680  | 0          |
 
 Todos os tamanhos fecharam timing sem violações com clock de 2,0 ns (500 MHz).
 
----
+### Observações de síntese
+
+O crescimento de área é aproximadamente linear quando N dobra.
+No N64 e N128, mais da metade da área está concentrada em lógica sequencial, o que é esperado para uma arquitetura serial com registradores de deslocamento e controle.
+O caminho crítico permanece curto o suficiente para manter fechamento em 500 MHz em todos os tamanhos avaliados.
 
 ## Resultados ATPG — Cadence Modus 21.10, FULLSCAN
 
 | N   | Scan chain (FFs) | Padrões gerados | Coverage final | Scan cycles | Faults totais |
-|-----|-----------------|-----------------|----------------|-------------|---------------|
-| 16  | 87              | 26              | 99,99%         | 174         | ~2.800        |
-| 32  | 175             | 29              | 99,99%         | 350         | ~5.500        |
-| 64  | 329             | 34              | 99,99%         | 658         | ~12.926       |
-| 128 | 650             | 38              | 99,99%         | 1.300       | ~26.328       |
+|-----|------------------:|----------------:|---------------:|------------:|--------------:|
+| 16  | 87                | 26              | 99,99%         | 174         | ~2.800        |
+| 32  | 175               | 29              | 99,99%         | 350         | ~5.500        |
+| 64  | 329               | 34              | 99,99%         | 658         | ~12.926       |
+| 128 | 650               | 38              | 99,99%         | 1.300       | ~26.328       |
 
 Todos os tamanhos atingiram cobertura de falhas ≥ 99,99% no modelo stuck-at com uma única cadeia de scan.
 
 ### Observações
 
-- O comprimento da scan chain cresce linearmente com N, como esperado (registradores A, B e contador).
-- O número de padrões cresce de forma sub-linear (26 → 38 para N 16 → 128), o que indica boa reusabilidade estrutural dos padrões entre os tamanhos.
-- O warning `TBM-099` (switching > 30%) aparece em todos os tamanhos e é esperado para circuitos puramente combinacionais/datapath; não afeta a cobertura.
-
----
-
-## Como alterar o tamanho
-
-Edite o parâmetro default no RTL antes de rodar a síntese:
-
-```systemverilog
-parameter int N = 32   // altere aqui
-```
-
-Ou via linha de comando antes de invocar o Genus:
-
-```bash
-sed -i "s/parameter int N = [0-9]*/parameter int N = 64/" ../rtl/multiplier_param.sv
-genus -f comandos_genus.txt
-```
-
----
+O comprimento da scan chain cresce linearmente com N, como esperado.
+O número de padrões cresce de forma sub-linear, o que indica boa reusabilidade estrutural entre os tamanhos.
+O warning de switching alto é esperado para esse tipo de datapath e não impediu o fechamento da cobertura.
 
 ## Fluxo de execução
 
-```
 RTL (multiplier_param.sv)
     └── Genus (síntese lógica)
-            ├── constraint/load.tcl       — bibliotecas e LEF
-            ├── constraint/multiplier_param.sdc  — timing constraints
-            └── dft_setup.tcl             — inserção de scan
+            ├── constraint/load.tcl              — bibliotecas e LEF
+            ├── constraint/multiplier_param.sdc   — timing constraints
+            └── dft_setup.tcl                    — inserção de scan
                     └── layout/logical_multiplier_param_N*.{v,db,...}
                             └── Modus (ATPG)
                                     └── Xcelium (verificação dos vetores)
-```
 
 ## Ambiente
 
@@ -99,3 +80,51 @@ RTL (multiplier_param.sv)
 | Xcelium    | 23.03-s003     |
 | Tecnologia | STM 65nm GPSVT |
 | OS         | Rocky Linux 8.10 |
+
+
+## Execução
+
+O fluxo é controlado por um Makefile e inclui síntese lógica (Genus), ATPG (Modus) e simulação dos vetores gerados (Xcelium).
+
+### Fluxo completo
+
+Executa todas as etapas do projeto:
+
+```bash
+make N=16
+make N=32
+make N=64
+make N=128
+```
+
+O parâmetro `N` define a largura dos operandos do multiplicador e é repassado ao Genus durante a síntese.
+
+### Execução individual
+
+Executar apenas a síntese lógica:
+
+```bash
+make genus N=64
+```
+
+Executar apenas o ATPG:
+
+```bash
+make modus
+```
+
+Executar apenas a simulação dos vetores ATPG:
+
+```bash
+make xcelium
+```
+
+### Limpeza
+
+Remover todos os artefatos gerados pelo fluxo:
+
+```bash
+make clean
+```
+
+São removidos arquivos temporários, logs, bancos de dados do Genus, resultados do Modus e bibliotecas de simulação do Xcelium.

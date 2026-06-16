@@ -1,7 +1,7 @@
 
 Design Name
 ===========
-    multiplier_param_N16
+    multiplier_param_N128
 
 Scan Style
 ==========
@@ -87,7 +87,7 @@ DFT actual scan chains
           scan-out hookup_pin: chip_sdo_1 
           shared out: false
           shift_enable: chip_scan_se 
-          length: 87
+          length: 650
           segment objects: none
           analyzed: false
           test_clock domain: clk

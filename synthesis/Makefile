@@ -5,7 +5,7 @@ N=16
 all: genus modus xcelium
 
 genus:
-	genus -f comandos_genus.txt -execute "set N $(N)"
+	genus -execute "set N ${N}" -f comandos_genus.txt	
 
 modus:
 	modus -file outputs/dft/modus_atpg/runmodus.atpg.tcl
@@ -33,3 +33,4 @@ clean:
 	rm -rf outputs/dft/modus_atpg/Inca_libs_* 
 	rm -rf outputs/dft/modus_atpg/testresults 
 	rm -rf outputs/dft/modus_atpg/tbdata
+
