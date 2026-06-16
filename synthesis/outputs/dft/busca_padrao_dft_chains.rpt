@@ -1,0 +1,133 @@
+Reporting 2 scan chains (muxed_scan)
+ 
+Chain 1: AutoChain_1 
+  scan_in:      chip_sdi_1 
+  scan_out:     chip_sdo_1   
+  shift_enable: chip_scan_se (active high) 
+  clock_domain: Bus2IP_Clk (edge: fall)
+  length: 16
+    bit 1 	address_reg_0  <Bus2IP_Clk (fall)>  
+    bit 2 	address_reg_1  <Bus2IP_Clk (fall)>  
+    bit 3 	address_reg_2  <Bus2IP_Clk (fall)>  
+    bit 4 	address_reg_3  <Bus2IP_Clk (fall)>  
+    bit 5 	address_reg_4  <Bus2IP_Clk (fall)>  
+    bit 6 	address_reg_5  <Bus2IP_Clk (fall)>  
+    bit 7 	address_reg_6  <Bus2IP_Clk (fall)>  
+    bit 8 	address_reg_7  <Bus2IP_Clk (fall)>  
+    bit 9 	endx_reg_0  <Bus2IP_Clk (fall)>  
+    bit 10 	endx_reg_1  <Bus2IP_Clk (fall)>  
+    bit 11 	endx_reg_2  <Bus2IP_Clk (fall)>  
+    bit 12 	endx_reg_3  <Bus2IP_Clk (fall)>  
+    bit 13 	endy_reg_0  <Bus2IP_Clk (fall)>  
+    bit 14 	endy_reg_1  <Bus2IP_Clk (fall)>  
+    bit 15 	endy_reg_2  <Bus2IP_Clk (fall)>  
+    bit 16 	endy_reg_3  <Bus2IP_Clk (fall)>  
+------------------------
+Chain 2: AutoChain_2 
+  scan_in:      chip_sdi_2 
+  scan_out:     chip_sdo_2   
+  shift_enable: chip_scan_se (active high) 
+  clock_domain: Bus2IP_Clk (edge: rise)
+  length: 100
+    bit 1 	EA_reg_0  <Bus2IP_Clk (rise)>  
+    bit 2 	EA_reg_1  <Bus2IP_Clk (rise)>  
+    bit 3 	EA_reg_2  <Bus2IP_Clk (rise)>  
+    bit 4 	EA_reg_3  <Bus2IP_Clk (rise)>  
+    bit 5 	reseta_bit_slv_reg0_reg  <Bus2IP_Clk (rise)>  
+    bit 6 	slv_reg_reg_0_0  <Bus2IP_Clk (rise)>  
+    bit 7 	slv_reg_reg_0_1  <Bus2IP_Clk (rise)>  
+    bit 8 	slv_reg_reg_0_2  <Bus2IP_Clk (rise)>  
+    bit 9 	slv_reg_reg_0_3  <Bus2IP_Clk (rise)>  
+    bit 10 	slv_reg_reg_0_4  <Bus2IP_Clk (rise)>  
+    bit 11 	slv_reg_reg_0_5  <Bus2IP_Clk (rise)>  
+    bit 12 	slv_reg_reg_0_6  <Bus2IP_Clk (rise)>  
+    bit 13 	slv_reg_reg_0_7  <Bus2IP_Clk (rise)>  
+    bit 14 	slv_reg_reg_1_0  <Bus2IP_Clk (rise)>  
+    bit 15 	slv_reg_reg_1_1  <Bus2IP_Clk (rise)>  
+    bit 16 	slv_reg_reg_1_2  <Bus2IP_Clk (rise)>  
+    bit 17 	slv_reg_reg_1_3  <Bus2IP_Clk (rise)>  
+    bit 18 	slv_reg_reg_1_4  <Bus2IP_Clk (rise)>  
+    bit 19 	slv_reg_reg_1_5  <Bus2IP_Clk (rise)>  
+    bit 20 	slv_reg_reg_1_6  <Bus2IP_Clk (rise)>  
+    bit 21 	slv_reg_reg_1_7  <Bus2IP_Clk (rise)>  
+    bit 22 	slv_reg_reg_2_0  <Bus2IP_Clk (rise)>  
+    bit 23 	slv_reg_reg_2_1  <Bus2IP_Clk (rise)>  
+    bit 24 	slv_reg_reg_2_2  <Bus2IP_Clk (rise)>  
+    bit 25 	slv_reg_reg_2_3  <Bus2IP_Clk (rise)>  
+    bit 26 	slv_reg_reg_2_4  <Bus2IP_Clk (rise)>  
+    bit 27 	slv_reg_reg_2_5  <Bus2IP_Clk (rise)>  
+    bit 28 	slv_reg_reg_2_6  <Bus2IP_Clk (rise)>  
+    bit 29 	slv_reg_reg_2_7  <Bus2IP_Clk (rise)>  
+    bit 30 	slv_reg_reg_3_0  <Bus2IP_Clk (rise)>  
+    bit 31 	slv_reg_reg_3_1  <Bus2IP_Clk (rise)>  
+    bit 32 	slv_reg_reg_3_2  <Bus2IP_Clk (rise)>  
+    bit 33 	slv_reg_reg_3_3  <Bus2IP_Clk (rise)>  
+    bit 34 	slv_reg_reg_3_4  <Bus2IP_Clk (rise)>  
+    bit 35 	slv_reg_reg_3_5  <Bus2IP_Clk (rise)>  
+    bit 36 	slv_reg_reg_3_6  <Bus2IP_Clk (rise)>  
+    bit 37 	slv_reg_reg_3_7  <Bus2IP_Clk (rise)>  
+    bit 38 	slv_reg_reg_4_0  <Bus2IP_Clk (rise)>  
+    bit 39 	slv_reg_reg_4_1  <Bus2IP_Clk (rise)>  
+    bit 40 	slv_reg_reg_4_2  <Bus2IP_Clk (rise)>  
+    bit 41 	slv_reg_reg_4_3  <Bus2IP_Clk (rise)>  
+    bit 42 	slv_reg_reg_4_4  <Bus2IP_Clk (rise)>  
+    bit 43 	slv_reg_reg_4_5  <Bus2IP_Clk (rise)>  
+    bit 44 	slv_reg_reg_4_6  <Bus2IP_Clk (rise)>  
+    bit 45 	slv_reg_reg_4_7  <Bus2IP_Clk (rise)>  
+    bit 46 	slv_reg_reg_5_0  <Bus2IP_Clk (rise)>  
+    bit 47 	slv_reg_reg_5_1  <Bus2IP_Clk (rise)>  
+    bit 48 	slv_reg_reg_5_2  <Bus2IP_Clk (rise)>  
+    bit 49 	slv_reg_reg_5_3  <Bus2IP_Clk (rise)>  
+    bit 50 	slv_reg_reg_5_4  <Bus2IP_Clk (rise)>  
+    bit 51 	slv_reg_reg_5_5  <Bus2IP_Clk (rise)>  
+    bit 52 	slv_reg_reg_5_6  <Bus2IP_Clk (rise)>  
+    bit 53 	slv_reg_reg_5_7  <Bus2IP_Clk (rise)>  
+    bit 54 	slv_reg_reg_6_0  <Bus2IP_Clk (rise)>  
+    bit 55 	slv_reg_reg_6_1  <Bus2IP_Clk (rise)>  
+    bit 56 	slv_reg_reg_6_2  <Bus2IP_Clk (rise)>  
+    bit 57 	slv_reg_reg_6_3  <Bus2IP_Clk (rise)>  
+    bit 58 	slv_reg_reg_6_4  <Bus2IP_Clk (rise)>  
+    bit 59 	slv_reg_reg_6_5  <Bus2IP_Clk (rise)>  
+    bit 60 	slv_reg_reg_6_6  <Bus2IP_Clk (rise)>  
+    bit 61 	slv_reg_reg_6_7  <Bus2IP_Clk (rise)>  
+    bit 62 	slv_reg_reg_7_0  <Bus2IP_Clk (rise)>  
+    bit 63 	slv_reg_reg_7_1  <Bus2IP_Clk (rise)>  
+    bit 64 	slv_reg_reg_7_2  <Bus2IP_Clk (rise)>  
+    bit 65 	slv_reg_reg_7_3  <Bus2IP_Clk (rise)>  
+    bit 66 	slv_reg_reg_7_4  <Bus2IP_Clk (rise)>  
+    bit 67 	slv_reg_reg_7_5  <Bus2IP_Clk (rise)>  
+    bit 68 	slv_reg_reg_7_6  <Bus2IP_Clk (rise)>  
+    bit 69 	slv_reg_reg_7_7  <Bus2IP_Clk (rise)>  
+    bit 70 	slv_reg_reg_8_0  <Bus2IP_Clk (rise)>  
+    bit 71 	slv_reg_reg_8_1  <Bus2IP_Clk (rise)>  
+    bit 72 	slv_reg_reg_8_2  <Bus2IP_Clk (rise)>  
+    bit 73 	slv_reg_reg_8_3  <Bus2IP_Clk (rise)>  
+    bit 74 	slv_reg_reg_8_4  <Bus2IP_Clk (rise)>  
+    bit 75 	slv_reg_reg_8_5  <Bus2IP_Clk (rise)>  
+    bit 76 	slv_reg_reg_8_6  <Bus2IP_Clk (rise)>  
+    bit 77 	slv_reg_reg_8_7  <Bus2IP_Clk (rise)>  
+    bit 78 	slv_reg_reg_9_0  <Bus2IP_Clk (rise)>  
+    bit 79 	slv_reg_reg_10_0  <Bus2IP_Clk (rise)>  
+    bit 80 	slv_reg_reg_10_1  <Bus2IP_Clk (rise)>  
+    bit 81 	slv_reg_reg_10_2  <Bus2IP_Clk (rise)>  
+    bit 82 	slv_reg_reg_10_3  <Bus2IP_Clk (rise)>  
+    bit 83 	slv_reg_reg_10_4  <Bus2IP_Clk (rise)>  
+    bit 84 	slv_reg_reg_11_0  <Bus2IP_Clk (rise)>  
+    bit 85 	slv_reg_reg_11_1  <Bus2IP_Clk (rise)>  
+    bit 86 	slv_reg_reg_11_2  <Bus2IP_Clk (rise)>  
+    bit 87 	slv_reg_reg_11_3  <Bus2IP_Clk (rise)>  
+    bit 88 	slv_reg_reg_12_0  <Bus2IP_Clk (rise)>  
+    bit 89 	slv_reg_reg_12_1  <Bus2IP_Clk (rise)>  
+    bit 90 	slv_reg_reg_12_2  <Bus2IP_Clk (rise)>  
+    bit 91 	slv_reg_reg_12_3  <Bus2IP_Clk (rise)>  
+    bit 92 	slv_reg_reg_13_0  <Bus2IP_Clk (rise)>  
+    bit 93 	slv_reg_reg_13_1  <Bus2IP_Clk (rise)>  
+    bit 94 	slv_reg_reg_13_2  <Bus2IP_Clk (rise)>  
+    bit 95 	slv_reg_reg_13_3  <Bus2IP_Clk (rise)>  
+    bit 96 	slv_reg_reg_14_0  <Bus2IP_Clk (rise)>  
+    bit 97 	slv_reg_reg_14_1  <Bus2IP_Clk (rise)>  
+    bit 98 	slv_reg_reg_14_2  <Bus2IP_Clk (rise)>  
+    bit 99 	slv_reg_reg_14_3  <Bus2IP_Clk (rise)>  
+    bit 100 	user_int_reg  <Bus2IP_Clk (rise)>  
+------------------------
+

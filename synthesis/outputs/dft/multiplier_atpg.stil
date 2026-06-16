@@ -1,0 +1,151 @@
+STIL 1.0 { Design 2005; } 
+Header {
+    Title "CTL for design 'multiplier'";
+    Date  "Thu Jun 11 19:57:10 -03 2026";
+    Source "Cadence Design Systems Genus 21.12-s068_1 STIL output";
+}
+Signals {
+    "in1[15]" In; "in1[14]" In; "in1[13]" In;  
+    "in1[12]" In; "in1[11]" In; "in1[10]" In; "in1[9]" In;  
+    "in1[8]" In; "in1[7]" In; "in1[6]" In; "in1[5]" In;  
+    "in1[4]" In; "in1[3]" In; "in1[2]" In; "in1[1]" In;  
+    "in1[0]" In; "in2[15]" In; "in2[14]" In; "in2[13]" In;  
+    "in2[12]" In; "in2[11]" In; "in2[10]" In; "in2[9]" In;  
+    "in2[8]" In; "in2[7]" In; "in2[6]" In; "in2[5]" In;  
+    "in2[4]" In; "in2[3]" In; "in2[2]" In; "in2[1]" In;  
+    "in2[0]" In; "start" In; "reset" In; "clk" In;  
+    "chip_scan_se" In; "chip_scan_tm" In; "chip_sdi_1" In;  
+ 
+    "out[31]" Out; "out[30]" Out; "out[29]" Out;  
+    "out[28]" Out; "out[27]" Out; "out[26]" Out; "out[25]" Out;  
+    "out[24]" Out; "out[23]" Out; "out[22]" Out; "out[21]" Out;  
+    "out[20]" Out; "out[19]" Out; "out[18]" Out; "out[17]" Out;  
+    "out[16]" Out; "out[15]" Out; "out[14]" Out; "out[13]" Out;  
+    "out[12]" Out; "out[11]" Out; "out[10]" Out; "out[9]" Out;  
+    "out[8]" Out; "out[7]" Out; "out[6]" Out; "out[5]" Out;  
+    "out[4]" Out; "out[3]" Out; "out[2]" Out; "out[1]" Out;  
+    "out[0]" Out; "done" Out; "chip_sdo_1" Out;  
+}
+SignalGroups {
+  // ... no bidirectional signals found
+  "all_inputs" = ' "in1[15]" + "in1[14]" + "in1[13]" +  
+    "in1[12]" + "in1[11]" + "in1[10]" + "in1[9]" +  
+    "in1[8]" + "in1[7]" + "in1[6]" + "in1[5]" +  
+    "in1[4]" + "in1[3]" + "in1[2]" + "in1[1]" +  
+    "in1[0]" + "in2[15]" + "in2[14]" + "in2[13]" +  
+    "in2[12]" + "in2[11]" + "in2[10]" + "in2[9]" +  
+    "in2[8]" + "in2[7]" + "in2[6]" + "in2[5]" +  
+    "in2[4]" + "in2[3]" + "in2[2]" + "in2[1]" +  
+    "in2[0]" + "start" + "reset" + "clk" +  
+    "chip_scan_se" + "chip_scan_tm" + "chip_sdi_1" '; // #signals=38
+  "all_outputs" = ' "out[31]" + "out[30]" + "out[29]" +  
+    "out[28]" + "out[27]" + "out[26]" + "out[25]" +  
+    "out[24]" + "out[23]" + "out[22]" + "out[21]" +  
+    "out[20]" + "out[19]" + "out[18]" + "out[17]" +  
+    "out[16]" + "out[15]" + "out[14]" + "out[13]" +  
+    "out[12]" + "out[11]" + "out[10]" + "out[9]" +  
+    "out[8]" + "out[7]" + "out[6]" + "out[5]" +  
+    "out[4]" + "out[3]" + "out[2]" + "out[1]" +  
+    "out[0]" + "done" + "chip_sdo_1" '; // #signals=34
+  "all_ports" =  ' "all_inputs"+ "all_outputs" '; // #signals=72
+  "_pi" = '"all_inputs"'; // #signals=38
+  "_po" = '"all_outputs"'; // #signals=34
+  "_si" = '"chip_sdi_1"'; // #signals=1
+  "_so" = '"chip_sdo_1"'; // #signals=1
+}
+ScanStructures {
+    ScanChain "AutoChain_1" {
+      ScanLength 87;
+     ScanIn "chip_sdi_1" ; 
+     ScanOut "chip_sdo_1" ; 
+     ScanEnable "chip_scan_se";
+     ScanMasterClock "clk";
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" { 
+      Period '50ns';
+      Waveforms {
+       "all_inputs" { 0 {  '0ns' D; } } 
+       "all_inputs" { 1 {  '0ns' U; } } 
+       "all_inputs" { Z {  '0ns' Z; } } 
+       "all_inputs" { N {  '0ns' N; } } 
+       "all_outputs" { X {  '0ns' X; } } 
+       "all_outputs" { H {  '0ns' X; '20ns' H; } } 
+       "all_outputs" { T {  '0ns' X; '20ns' T; } } 
+       "all_outputs" { L {  '0ns' X; '20ns' L; } } 
+       "clk" { P {  '0ns' D; '25ns' U; '45ns' D; } } 
+       "reset" { P {  '0ns' D; '25ns' U; '45ns' D; } } 
+    }
+  }
+}
+//PatternBurst "__burst__" {
+//  PatList {
+//    "__pattern__" {
+//    }
+//  }
+//}
+//PatternExec {
+//    Timing "";
+//    PatternBurst "__burst__";
+//}
+Procedures {
+    "load_unload" {
+        W "_default_WFT_";
+        V {
+          "clk"=0; 
+          "chip_scan_se"=1; 
+          "chip_scan_tm"=1; 
+          "reset"=0; 
+          }
+        Shift {
+          W "_default_WFT_";
+          V {
+         "_si"=#; "_so"=#;
+            "clk"=P; 
+            "chip_scan_se"=1; 
+            "chip_scan_tm"=1; 
+            "reset"=0; 
+}
+        }
+    }
+    "capture" {
+        W "_default_WFT_";
+        F { 
+             "chip_scan_tm"=1; 
+          }
+        V { "_pi"=\r38 #; "_po"=\r34 #; }
+    }
+    "capture_clk" {
+        W "_default_WFT_";
+        F { 
+            "chip_scan_tm"=1; 
+        }
+        "forcePI": V { "_pi"=\r38 #; }
+        "measurePO": V { "_po"=\r34 #; }
+        "pulse": V { "clk"=P; }
+    }
+    "capture_reset" {
+        W "_default_WFT_";
+        F { 
+            "chip_scan_tm"=1; 
+        }
+        "forcePI": V { "_pi"=\r38 #; }
+        "measurePO": V { "_po"=\r34 #; }
+        "pulse": V { "reset"=P; }
+    }
+}
+MacroDefs {
+    "test_setup" {
+        W "_default_WFT_";
+        V { 
+            "clk" =0; 
+           }
+      // If required, add your test_controller specific initilization vectors here
+        V { 
+          "clk" =0; 
+          "chip_scan_tm" = 1; 
+          "reset" = 0; 
+        }
+    }
+}

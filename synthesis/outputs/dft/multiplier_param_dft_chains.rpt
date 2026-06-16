@@ -1,0 +1,97 @@
+Reporting 1 scan chain (muxed_scan)
+ 
+Chain 1: AutoChain_1 
+  scan_in:      chip_sdi_1 
+  scan_out:     chip_sdo_1   
+  shift_enable: chip_scan_se (active high) 
+  clock_domain: clk (edge: rise)
+  length: 87
+    bit 1 	count_reg_0  <clk (rise)>  
+    bit 2 	count_reg_1  <clk (rise)>  
+    bit 3 	count_reg_2  <clk (rise)>  
+    bit 4 	count_reg_3  <clk (rise)>  
+    bit 5 	count_reg_4  <clk (rise)>  
+    bit 6 	out_reg_0  <clk (rise)>  
+    bit 7 	out_reg_1  <clk (rise)>  
+    bit 8 	out_reg_2  <clk (rise)>  
+    bit 9 	out_reg_3  <clk (rise)>  
+    bit 10 	out_reg_4  <clk (rise)>  
+    bit 11 	out_reg_5  <clk (rise)>  
+    bit 12 	out_reg_6  <clk (rise)>  
+    bit 13 	out_reg_7  <clk (rise)>  
+    bit 14 	out_reg_8  <clk (rise)>  
+    bit 15 	out_reg_9  <clk (rise)>  
+    bit 16 	out_reg_10  <clk (rise)>  
+    bit 17 	out_reg_11  <clk (rise)>  
+    bit 18 	out_reg_12  <clk (rise)>  
+    bit 19 	out_reg_13  <clk (rise)>  
+    bit 20 	out_reg_14  <clk (rise)>  
+    bit 21 	out_reg_15  <clk (rise)>  
+    bit 22 	out_reg_16  <clk (rise)>  
+    bit 23 	out_reg_17  <clk (rise)>  
+    bit 24 	out_reg_18  <clk (rise)>  
+    bit 25 	out_reg_19  <clk (rise)>  
+    bit 26 	out_reg_20  <clk (rise)>  
+    bit 27 	out_reg_21  <clk (rise)>  
+    bit 28 	out_reg_22  <clk (rise)>  
+    bit 29 	out_reg_23  <clk (rise)>  
+    bit 30 	out_reg_24  <clk (rise)>  
+    bit 31 	out_reg_25  <clk (rise)>  
+    bit 32 	out_reg_26  <clk (rise)>  
+    bit 33 	out_reg_27  <clk (rise)>  
+    bit 34 	out_reg_28  <clk (rise)>  
+    bit 35 	out_reg_29  <clk (rise)>  
+    bit 36 	out_reg_30  <clk (rise)>  
+    bit 37 	out_reg_31  <clk (rise)>  
+    bit 38 	par_out_a_reg_0  <clk (rise)>  
+    bit 39 	par_out_a_reg_1  <clk (rise)>  
+    bit 40 	par_out_a_reg_2  <clk (rise)>  
+    bit 41 	par_out_a_reg_3  <clk (rise)>  
+    bit 42 	par_out_a_reg_4  <clk (rise)>  
+    bit 43 	par_out_a_reg_5  <clk (rise)>  
+    bit 44 	par_out_a_reg_6  <clk (rise)>  
+    bit 45 	par_out_a_reg_7  <clk (rise)>  
+    bit 46 	par_out_a_reg_8  <clk (rise)>  
+    bit 47 	par_out_a_reg_9  <clk (rise)>  
+    bit 48 	par_out_a_reg_10  <clk (rise)>  
+    bit 49 	par_out_a_reg_11  <clk (rise)>  
+    bit 50 	par_out_a_reg_12  <clk (rise)>  
+    bit 51 	par_out_a_reg_13  <clk (rise)>  
+    bit 52 	par_out_a_reg_14  <clk (rise)>  
+    bit 53 	par_out_a_reg_15  <clk (rise)>  
+    bit 54 	par_out_a_reg_16  <clk (rise)>  
+    bit 55 	par_out_a_reg_17  <clk (rise)>  
+    bit 56 	par_out_a_reg_18  <clk (rise)>  
+    bit 57 	par_out_a_reg_19  <clk (rise)>  
+    bit 58 	par_out_a_reg_20  <clk (rise)>  
+    bit 59 	par_out_a_reg_21  <clk (rise)>  
+    bit 60 	par_out_a_reg_22  <clk (rise)>  
+    bit 61 	par_out_a_reg_23  <clk (rise)>  
+    bit 62 	par_out_a_reg_24  <clk (rise)>  
+    bit 63 	par_out_a_reg_25  <clk (rise)>  
+    bit 64 	par_out_a_reg_26  <clk (rise)>  
+    bit 65 	par_out_a_reg_27  <clk (rise)>  
+    bit 66 	par_out_a_reg_28  <clk (rise)>  
+    bit 67 	par_out_a_reg_29  <clk (rise)>  
+    bit 68 	par_out_a_reg_30  <clk (rise)>  
+    bit 69 	par_out_a_reg_31  <clk (rise)>  
+    bit 70 	par_out_b_reg_0  <clk (rise)>  
+    bit 71 	par_out_b_reg_1  <clk (rise)>  
+    bit 72 	par_out_b_reg_2  <clk (rise)>  
+    bit 73 	par_out_b_reg_3  <clk (rise)>  
+    bit 74 	par_out_b_reg_4  <clk (rise)>  
+    bit 75 	par_out_b_reg_5  <clk (rise)>  
+    bit 76 	par_out_b_reg_6  <clk (rise)>  
+    bit 77 	par_out_b_reg_7  <clk (rise)>  
+    bit 78 	par_out_b_reg_8  <clk (rise)>  
+    bit 79 	par_out_b_reg_9  <clk (rise)>  
+    bit 80 	par_out_b_reg_10  <clk (rise)>  
+    bit 81 	par_out_b_reg_11  <clk (rise)>  
+    bit 82 	par_out_b_reg_12  <clk (rise)>  
+    bit 83 	par_out_b_reg_13  <clk (rise)>  
+    bit 84 	par_out_b_reg_14  <clk (rise)>  
+    bit 85 	par_out_b_reg_15  <clk (rise)>  
+    bit 86 	state_reg_0  <clk (rise)>  
+    bit 87 	state_reg_1  <clk (rise)>  
+------------------------
+

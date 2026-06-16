@@ -1,0 +1,150 @@
+STIL 1.0 { Design 2005; } 
+Header {
+    Title "CTL for design 'busca_padrao'";
+    Date  "Tue Jun 02 19:39:03 -03 2026";
+    Source "Cadence Design Systems Genus 21.12-s068_1 STIL output";
+}
+Signals {
+    "Bus2IP_Clk" In; "Bus2IP_Reset" In; "Bus2IP_Data[7]" In;  
+    "Bus2IP_Data[6]" In; "Bus2IP_Data[5]" In; "Bus2IP_Data[4]" In; "Bus2IP_Data[3]" In;  
+    "Bus2IP_Data[2]" In; "Bus2IP_Data[1]" In; "Bus2IP_Data[0]" In; "Bus2IP_RdCE[0]" In;  
+    "Bus2IP_RdCE[1]" In; "Bus2IP_RdCE[2]" In; "Bus2IP_RdCE[3]" In; "Bus2IP_RdCE[4]" In;  
+    "Bus2IP_RdCE[5]" In; "Bus2IP_RdCE[6]" In; "Bus2IP_RdCE[7]" In; "Bus2IP_RdCE[8]" In;  
+    "Bus2IP_RdCE[9]" In; "Bus2IP_RdCE[10]" In; "Bus2IP_RdCE[11]" In; "Bus2IP_RdCE[12]" In;  
+    "Bus2IP_RdCE[13]" In; "Bus2IP_RdCE[14]" In; "Bus2IP_WrCE[0]" In; "Bus2IP_WrCE[1]" In;  
+    "Bus2IP_WrCE[2]" In; "Bus2IP_WrCE[3]" In; "Bus2IP_WrCE[4]" In; "Bus2IP_WrCE[5]" In;  
+    "Bus2IP_WrCE[6]" In; "Bus2IP_WrCE[7]" In; "Bus2IP_WrCE[8]" In; "Bus2IP_WrCE[9]" In;  
+    "Bus2IP_WrCE[10]" In; "Bus2IP_WrCE[11]" In; "Bus2IP_WrCE[12]" In; "Bus2IP_WrCE[13]" In;  
+    "Bus2IP_WrCE[14]" In; "chip_scan_se" In; "chip_scan_tm" In; "chip_sdi_1" In;  
+    "chip_sdi_2" In;  
+ 
+    "IP2Bus_Data[7]" Out; "IP2Bus_Data[6]" Out; "IP2Bus_Data[5]" Out;  
+    "IP2Bus_Data[4]" Out; "IP2Bus_Data[3]" Out; "IP2Bus_Data[2]" Out; "IP2Bus_Data[1]" Out;  
+    "IP2Bus_Data[0]" Out; "user_int" Out; "chip_sdo_1" Out; "chip_sdo_2" Out;  
+}
+SignalGroups {
+  // ... no bidirectional signals found
+  "all_inputs" = ' "Bus2IP_Clk" + "Bus2IP_Reset" + "Bus2IP_Data[7]" +  
+    "Bus2IP_Data[6]" + "Bus2IP_Data[5]" + "Bus2IP_Data[4]" + "Bus2IP_Data[3]" +  
+    "Bus2IP_Data[2]" + "Bus2IP_Data[1]" + "Bus2IP_Data[0]" + "Bus2IP_RdCE[0]" +  
+    "Bus2IP_RdCE[1]" + "Bus2IP_RdCE[2]" + "Bus2IP_RdCE[3]" + "Bus2IP_RdCE[4]" +  
+    "Bus2IP_RdCE[5]" + "Bus2IP_RdCE[6]" + "Bus2IP_RdCE[7]" + "Bus2IP_RdCE[8]" +  
+    "Bus2IP_RdCE[9]" + "Bus2IP_RdCE[10]" + "Bus2IP_RdCE[11]" + "Bus2IP_RdCE[12]" +  
+    "Bus2IP_RdCE[13]" + "Bus2IP_RdCE[14]" + "Bus2IP_WrCE[0]" + "Bus2IP_WrCE[1]" +  
+    "Bus2IP_WrCE[2]" + "Bus2IP_WrCE[3]" + "Bus2IP_WrCE[4]" + "Bus2IP_WrCE[5]" +  
+    "Bus2IP_WrCE[6]" + "Bus2IP_WrCE[7]" + "Bus2IP_WrCE[8]" + "Bus2IP_WrCE[9]" +  
+    "Bus2IP_WrCE[10]" + "Bus2IP_WrCE[11]" + "Bus2IP_WrCE[12]" + "Bus2IP_WrCE[13]" +  
+    "Bus2IP_WrCE[14]" + "chip_scan_se" + "chip_scan_tm" + "chip_sdi_1" +  
+    "chip_sdi_2" '; // #signals=44
+  "all_outputs" = ' "IP2Bus_Data[7]" + "IP2Bus_Data[6]" + "IP2Bus_Data[5]" +  
+    "IP2Bus_Data[4]" + "IP2Bus_Data[3]" + "IP2Bus_Data[2]" + "IP2Bus_Data[1]" +  
+    "IP2Bus_Data[0]" + "user_int" + "chip_sdo_1" + "chip_sdo_2" '; // #signals=11
+  "all_ports" =  ' "all_inputs"+ "all_outputs" '; // #signals=55
+  "_pi" = '"all_inputs"'; // #signals=44
+  "_po" = '"all_outputs"'; // #signals=11
+  "_si" = '"chip_sdi_1" + "chip_sdi_2"'; // #signals=2
+  "_so" = '"chip_sdo_1" + "chip_sdo_2"'; // #signals=2
+}
+ScanStructures {
+    ScanChain "AutoChain_1" {
+      ScanLength 16;
+     ScanIn "chip_sdi_1" ; 
+     ScanOut "chip_sdo_1" ; 
+     ScanEnable "chip_scan_se";
+     ScanMasterClock "Bus2IP_Clk";
+    }
+    ScanChain "AutoChain_2" {
+      ScanLength 100;
+     ScanIn "chip_sdi_2" ; 
+     ScanOut "chip_sdo_2" ; 
+     ScanEnable "chip_scan_se";
+     ScanMasterClock "Bus2IP_Clk";
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" { 
+      Period '50ns';
+      Waveforms {
+       "all_inputs" { 0 {  '0ns' D; } } 
+       "all_inputs" { 1 {  '0ns' U; } } 
+       "all_inputs" { Z {  '0ns' Z; } } 
+       "all_inputs" { N {  '0ns' N; } } 
+       "all_outputs" { X {  '0ns' X; } } 
+       "all_outputs" { H {  '0ns' X; '20ns' H; } } 
+       "all_outputs" { T {  '0ns' X; '20ns' T; } } 
+       "all_outputs" { L {  '0ns' X; '20ns' L; } } 
+       "Bus2IP_Clk" { P {  '0ns' D; '25ns' U; '45ns' D; } } 
+       "Bus2IP_Reset" { P {  '0ns' D; '25ns' U; '45ns' D; } } 
+    }
+  }
+}
+//PatternBurst "__burst__" {
+//  PatList {
+//    "__pattern__" {
+//    }
+//  }
+//}
+//PatternExec {
+//    Timing "";
+//    PatternBurst "__burst__";
+//}
+Procedures {
+    "load_unload" {
+        W "_default_WFT_";
+        V {
+          "Bus2IP_Clk"=0; 
+          "chip_scan_se"=1; 
+          "chip_scan_tm"=1; 
+          "Bus2IP_Reset"=0; 
+          }
+        Shift {
+          W "_default_WFT_";
+          V {
+         "_si"=##; "_so"=##;
+            "Bus2IP_Clk"=P; 
+            "chip_scan_se"=1; 
+            "chip_scan_tm"=1; 
+            "Bus2IP_Reset"=0; 
+}
+        }
+    }
+    "capture" {
+        W "_default_WFT_";
+        F { 
+             "chip_scan_tm"=1; 
+          }
+        V { "_pi"=\r44 #; "_po"=\r11 #; }
+    }
+    "capture_Bus2IP_Clk" {
+        W "_default_WFT_";
+        F { 
+            "chip_scan_tm"=1; 
+        }
+        "forcePI": V { "_pi"=\r44 #; }
+        "measurePO": V { "_po"=\r11 #; }
+        "pulse": V { "Bus2IP_Clk"=P; }
+    }
+    "capture_Bus2IP_Reset" {
+        W "_default_WFT_";
+        F { 
+            "chip_scan_tm"=1; 
+        }
+        "forcePI": V { "_pi"=\r44 #; }
+        "measurePO": V { "_po"=\r11 #; }
+        "pulse": V { "Bus2IP_Reset"=P; }
+    }
+}
+MacroDefs {
+    "test_setup" {
+        W "_default_WFT_";
+        V { 
+            "Bus2IP_Clk" =0; 
+           }
+      // If required, add your test_controller specific initilization vectors here
+        V { 
+          "Bus2IP_Clk" =0; 
+          "chip_scan_tm" = 1; 
+          "Bus2IP_Reset" = 0; 
+        }
+    }
+}

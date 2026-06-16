@@ -1,0 +1,61 @@
+
+Design Name
+===========
+    alu_core
+
+Scan Style
+==========
+    muxed_scan
+Design has a valid DFT rule check status
+
+Global Constraints
+==================
+    Minimum number of scan chains: no_value
+    Maximum length of scan chains: no_value
+    Lock-up element type: preferred_level_sensitive
+    Mix clock edges in scan chain: false
+    Prefix for unnamed scan objects: chip_
+
+Test signal objects
+===================
+    shift_enable: 
+          object name: se 
+          pin name: chip_scan_se 
+          hookup_pin: chip_scan_se 
+          hookup_polarity: non_inverted 
+          function: shift_enable 
+          active: high 
+          ideal: false 
+          user defined: true
+
+    test_mode: 
+          object name: tm 
+          pin name: chip_scan_tm 
+          hookup_pin: chip_scan_tm 
+          hookup_polarity: non_inverted 
+          function: test_mode 
+          active: high 
+          ideal: false 
+          user defined: true
+
+
+Test clock objects
+==================
+
+DFT controllable objects
+========================
+
+DFT don't scan objects
+======================
+
+DFT abstract don't scan objects
+===============================
+
+DFT scan segment constraints
+============================
+
+DFT scan chain constraints
+==========================
+
+DFT actual scan chains
+======================

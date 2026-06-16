@@ -1,0 +1,6 @@
+assign pin=chip_scan_tm 	test_function= +TI; 	# test_mode
+assign pin=reset 	test_function= -SC; 	# test_mode
+assign pin=chip_scan_se 	test_function= +SE; 	# shift_enable
+assign pin=clk 	test_function= -ES; 	
+assign pin=chip_sdi_1 	test_function= SI0;
+assign pin=chip_sdo_1 	test_function= SO0;

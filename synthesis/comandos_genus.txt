@@ -1,0 +1,36 @@
+##############################################################
+##              Logical synthesis commands                  ##
+## Script Generated for Undergrad class of microelectronics ##
+## GAPH/FACIN/PUCRS                                         ##
+##############################################################
+
+if {![info exists N]} {
+    set N 16
+}
+
+## 1) load synthesis configuration, read description and elaborate design 
+set DESIGN multiplier_param
+include ./constraint/load.tcl 
+read_hdl -sv multiplier_param.sv
+elaborate multiplier_param -param $N
+
+## 2) read constraints
+read_sdc ./constraint/multiplier_param.sdc
+
+## 3) synthesize to mapped
+syn_generic
+syn_map
+syn_opt 
+
+## 4) reports
+report_area  > rep_busca_padrao.txt
+report_gates >> rep_busca_padrao.txt
+report_timing >> rep_busca_padrao.txt
+report_power  -unit mW >> rep_busca_padrao.txt
+
+## 5) insert scan chains
+include dft_setup.tcl
+
+## 6) build physical synthesis environment
+write_netlist [current_design] > busca.v
+write_snapshot  -innovus -directory layout -tag logical [current_design]
