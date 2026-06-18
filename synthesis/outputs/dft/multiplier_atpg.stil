@@ -1,7 +1,7 @@
 STIL 1.0 { Design 2005; } 
 Header {
     Title "CTL for design 'multiplier'";
-    Date  "Thu Jun 11 19:57:10 -03 2026";
+    Date  "Thu Jun 18 19:45:53 -03 2026";
     Source "Cadence Design Systems Genus 21.12-s068_1 STIL output";
 }
 Signals {

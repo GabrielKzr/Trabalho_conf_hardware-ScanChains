@@ -1,228 +1,50 @@
 xrun(64): 23.03-s003: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	23.03-s003: Started on Jun 11, 2026 at 20:16:09 -03
+TOOL:	xrun(64)	23.03-s003: Started on Jun 18, 2026 at 19:59:02 -03
 xrun
+	-gui
 	+access+rwc
 	+xmstatus
 	+xm64bit
-	+TESTFILE1=outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.data.scan.ex1.ts1.verilog
-	+TESTFILE2=outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.data.logic.ex1.ts2.verilog
+	+TESTFILE1=outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.data.scan.ex1.ts1.verilog
+	+TESTFILE2=outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.data.logic.ex1.ts2.verilog
 	+HEARTBEAT
 	+FAILSET
 	+xmtimescale+1ns/1ps
 	+xmoverride_timescale
 	+xmseq_udp_delay+2ps
 	+libext+.v+.V+.z+.Z+.gz
-	+xmlibdirname+outputs/dft/modus_atpg/Inca_libs_20_12_33
+	+xmlibdirname+outputs/dft/modus_atpg/Inca_libs_19_56_19
 	-l outputs/dft/modus_atpg/ncverilog_FULLSCAN.log
 	-v /soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v
 	-v /soft64/design-kits/stm/65nm-cmos065_536/CLOCK65GPSVT_3.1/behaviour/verilog/CLOCK65GPSVT.v
 	-v /soft64/design-kits/stm/65nm-cmos065_536/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z_7.0/behaviour/verilog/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z.v
-	outputs/dft/modus_atpg/multiplier_param.test_netlist.v
-	outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.mainsim.v
+	outputs/dft/modus_atpg/multiplier_param_N128.test_netlist.v
+	outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.mainsim.v
 
    User defined plus("+") options:
-	+TESTFILE1=outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.data.scan.ex1.ts1.verilog
-	+TESTFILE2=outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.data.logic.ex1.ts2.verilog
+	+TESTFILE1=outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.data.scan.ex1.ts1.verilog
+	+TESTFILE2=outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.data.logic.ex1.ts2.verilog
 	+HEARTBEAT
 	+FAILSET
 
 xrun: *W,LEXTSF: Unknown suffix (.z) found in a libext option.  The suffixes will be mapped to Verilog.
 xrun: *W,LEXTSF: Unknown suffix (.Z) found in a libext option.  The suffixes will be mapped to Verilog.
 xrun: *W,LEXTSF: Unknown suffix (.gz) found in a libext option.  The suffixes will be mapped to Verilog.
-file: outputs/dft/modus_atpg/multiplier_param.test_netlist.v
-	module worklib.multiplier_param:v
-		errors: 0, warnings: 0
-file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.mainsim.v
-	module worklib.modus_atpg_FULLSCAN_multiplier_param_atpg:v
-		errors: 0, warnings: 0
-file: /soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v
-	module CORE65GPSVT.HS65_GSS1_FA1X9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GSS_SDFPRQX27:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GSS_SDFPRQX35:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GSS_XNOR2X6:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GSS_XOR2X6:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GSS_XOR3X2:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_AND2X4:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_AO112X9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_AO12X9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_AO312X9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_AOI12X2:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_AOI21X2:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_BFX9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_CB4I6X9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_CBI4I1X5:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_FA1X4:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_FA1X9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_HA1X4:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_IVX7:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_IVX9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_MUX21I1X6:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_MUX21X4:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_NAND2AX7:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_NAND2X7:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_NAND3AX6:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_NOR2AX19:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_NOR2AX3:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_NOR2X6:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_NOR3AX9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_NOR3X4:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_OA12X9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_OA311X9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_OAI12X3:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_OR2X9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_OR3X9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_SDFPRQNX9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_SDFPRQTX4:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_SDFPRQX4:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_SDFPRQX9:v
-		errors: 0, warnings: 0
-	module CORE65GPSVT.HS65_GS_SDFPSQTX9:v
-		errors: 0, warnings: 0
-	primitive CORE65GPSVT.CORE65GPSVT_U_FD_P_RN_NOTI:v
-		errors: 0, warnings: 0
-	primitive CORE65GPSVT.CORE65GPSVT_U_FD_P_SN_NOTI:v
-		errors: 0, warnings: 0
-	primitive CORE65GPSVT.CORE65GPSVT_U_MUX2:v
-		errors: 0, warnings: 0
-file: /soft64/design-kits/stm/65nm-cmos065_536/CLOCK65GPSVT_3.1/behaviour/verilog/CLOCK65GPSVT.v
-	module CLOCK65GPSVT.HS65_GS_CNIVX7:v
-		errors: 0, warnings: 0
-xmvlog: *W,LIBNOU: Library "/soft64/design-kits/stm/65nm-cmos065_536/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z_7.0/behaviour/verilog/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z.v" given but not used.
-	Total errors/warnings found outside modules and primitives:
-		errors: 0, warnings: 1
-xmvlog: Memory Usage - Current physical: 33.0M, Current virtual: 66.5M
-xmvlog: CPU Usage - 0.0s system + 0.1s user = 0.2s total (0.2s, 78.2% cpu)
-xmelab: *N,INFSUD: -NOSPECIFY is automatically used with -SEQ_UDP_DELAY.
-		Caching library 'CLOCK65GPSVT' ....... Done
-		Caching library 'CORE65GPSVT' ....... Done
-		Caching library 'worklib' ....... Done
-	Elaborating the design hierarchy:
-	Top level design units:
-		modus_atpg_FULLSCAN_multiplier_param_atpg
-	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		CORE65GPSVT.HS65_GS_MUX21X4:v <0x6430c89a>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_CBI4I1X5:v <0x0b9b05b8>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_OA12X9:v <0x7a397354>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_HA1X4:v <0x2985210d>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_AO12X9:v <0x0e8c3273>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_CB4I6X9:v <0x28428bc7>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GSS1_FA1X9:v <0x032cb095>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_FA1X9:v <0x68c4ae16>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_OA311X9:v <0x006b614c>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_OAI12X3:v <0x7cfe98b5>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_AO312X9:v <0x1368cb10>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GSS_XNOR2X6:v <0x0f4b06c9>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_FA1X4:v <0x303376b0>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GSS_XOR3X2:v <0x11de86ca>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GSS_XOR2X6:v <0x37e12bd5>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_AOI21X2:v <0x2ed1db74>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_AOI12X2:v <0x64442ea1>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_AO112X9:v <0x28ebfc46>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_MUX21I1X6:v <0x6944b0e4>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_SDFPRQTX4:v <0x4fa02224>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_SDFPSQTX9:v <0x494c80e6>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GSS_SDFPRQX27:v <0x7a4de381>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GSS_SDFPRQX35:v <0x16a42877>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_SDFPRQNX9:v <0x63eb4bc1>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_SDFPRQX9:v <0x438d18f6>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_SDFPRQX4:v <0x3a881143>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_SDFPRQTX4:v <0x7fddba73>
-			streams:   0, words:     0
-		CORE65GPSVT.HS65_GS_SDFPSQTX9:v <0x73533150>
-			streams:   0, words:     0
-		worklib.modus_atpg_FULLSCAN_multiplier_param_atpg:v <0x3e3d2615>
-			streams: 100, words: 176586
-	Building instance specific data structures.
-	Loading native compiled code:     .................... Done
-	Design hierarchy summary:
-		                    Instances  Unique
-		Modules:                  330      43
-		UDPs:                     205       3
-		Primitives:              1461       6
-		Registers:                171      93
-		Scalar wires:             564       -
-		Expanded wires:            32       2
-		Initial blocks:             1       1
-		Cont. assignments:         89       3
-		Pseudo assignments:         1       -
-		Timing checks:           1218       -
-		Delayed tcheck signals:   435       -
-		Simulation timescale:     1ps
-	Writing initial simulation snapshot: worklib.modus_atpg_FULLSCAN_multiplier_param_atpg:v
-xmelab: Memory Usage - Final: 65.6M, Peak: 65.6M, Peak virtual: 148.9M
-xmelab: CPU Usage - 0.0s system + 0.1s user = 0.1s total (0.2s, 58.0% cpu)
-Loading snapshot worklib.modus_atpg_FULLSCAN_multiplier_param_atpg:v .................... Done
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
 xcelium> source /soft64/cadence/ferramentas/XCELIUM2303/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.chip_scan_se modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.chip_scan_tm modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.chip_sdi_1 modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.chip_sdo_1 modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.clk modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.done modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.in1 modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.in2 modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.out modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.reset modus_atpg_FULLSCAN_multiplier_param_N128_atpg.multiplier_param_N128_inst.start
+Created probe 1
 xcelium> run
 
-INFO (TVE-200): Simulating vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.data.scan.ex1.ts1.verilog 
+INFO (TVE-200): Simulating vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.data.scan.ex1.ts1.verilog 
 
-INFO (TVE-189): Design:  multiplier_param   Test Mode:  FULLSCAN   InExperiment:  multiplier_param_atpg 
+INFO (TVE-189): Design:  multiplier_param_N128   Test Mode:  FULLSCAN   InExperiment:  multiplier_param_N128_atpg 
 
 INFO (TVE-202): Simulating Test: 0  Odometer: 1.1.1.1.1.1  Relative Cycle: 1  Time: 0.00 ps  Tests Passed 0 of 0, Failed 0. 
 
@@ -230,22 +52,22 @@ INFO (TVE-211): Simulating Test: 1  Odometer: 1.1.1.2.1.1  Relative Cycle: 2  Ti
 
 INFO (TVE-211): Simulating Test: 1  Odometer: 1.1.1.2.1.2  Relative Cycle: 4  Time: 240000.00 ps  Relative Scan: 2  Tests Passed 1 of 1, Failed 0. 
 
-INFO (TVE-201): Simulation complete on vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.data.scan.ex1.ts1.verilog 
+INFO (TVE-201): Simulation complete on vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.data.scan.ex1.ts1.verilog 
 
-INFO (TVE-210): Results for vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.data.scan.ex1.ts1.verilog 
+INFO (TVE-210): Results for vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.data.scan.ex1.ts1.verilog 
                       Number of Cycles:           6 
                       Number of Tests:            1 
                         - Passed Tests:           1 
                         - Failed Tests:           0 
-                      Number of Compares:         87 
-                        - Good Compares:          87 
+                      Number of Compares:         650 
+                        - Good Compares:          650 
                         - Miscompares:            0 
                       Time:                       480000.00 ps 
 
 
-INFO (TVE-200): Simulating vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.data.logic.ex1.ts2.verilog 
+INFO (TVE-200): Simulating vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.data.logic.ex1.ts2.verilog 
 
-INFO (TVE-189): Design:  multiplier_param   Test Mode:  FULLSCAN   InExperiment:  multiplier_param_atpg 
+INFO (TVE-189): Design:  multiplier_param_N128   Test Mode:  FULLSCAN   InExperiment:  multiplier_param_N128_atpg 
 
 INFO (TVE-202): Simulating Test: 0  Odometer: 1.2.1.1.1.1  Relative Cycle: 1  Time: 480000.00 ps  Tests Passed 0 of 0, Failed 0. 
 
@@ -431,7 +253,9 @@ INFO (TVE-202): Simulating Test: 20  Odometer: 1.2.1.5.1.2  Relative Cycle: 58  
 
 INFO (TVE-202): Simulating Test: 20  Odometer: 1.2.1.5.1.3  Relative Cycle: 58  Time: 5040000.00 ps  Tests Passed 19 of 19, Failed 0. 
 
-INFO (TVE-211): Simulating Test: 20  Odometer: 1.2.1.5.1.4  Relative Cycle: 59  Time: 5120000.00 ps  Relative Scan: 20  Overlap Tests 20 and 21.  Tests Passed 19 of 19, Failed 0. 
+INFO (TVE-202): Simulating Test: 20  Odometer: 1.2.1.5.1.4  Relative Cycle: 58  Time: 5040000.00 ps  Tests Passed 19 of 19, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 20  Odometer: 1.2.1.5.1.5  Relative Cycle: 59  Time: 5120000.00 ps  Relative Scan: 20  Overlap Tests 20 and 21.  Tests Passed 19 of 19, Failed 0. 
 
 INFO (TVE-202): Simulating Test: 21  Odometer: 1.2.1.5.2.1  Relative Cycle: 59  Time: 5120000.00 ps  Tests Passed 20 of 20, Failed 0. 
 
@@ -439,114 +263,225 @@ INFO (TVE-202): Simulating Test: 21  Odometer: 1.2.1.5.2.2  Relative Cycle: 61  
 
 INFO (TVE-202): Simulating Test: 21  Odometer: 1.2.1.5.2.3  Relative Cycle: 61  Time: 5280000.00 ps  Tests Passed 20 of 20, Failed 0. 
 
-INFO (TVE-211): Simulating Test: 21  Odometer: 1.2.1.5.2.4  Relative Cycle: 62  Time: 5360000.00 ps  Relative Scan: 21  Overlap Tests 21 and 22.  Tests Passed 20 of 20, Failed 0. 
+INFO (TVE-202): Simulating Test: 21  Odometer: 1.2.1.5.2.4  Relative Cycle: 61  Time: 5280000.00 ps  Tests Passed 20 of 20, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 22  Odometer: 1.2.1.6.1.1  Relative Cycle: 62  Time: 5360000.00 ps  Tests Passed 21 of 21, Failed 0. 
+INFO (TVE-211): Simulating Test: 21  Odometer: 1.2.1.5.2.5  Relative Cycle: 62  Time: 5360000.00 ps  Relative Scan: 21  Overlap Tests 21 and 22.  Tests Passed 20 of 20, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 22  Odometer: 1.2.1.6.1.2  Relative Cycle: 64  Time: 5520000.00 ps  Tests Passed 21 of 21, Failed 0. 
+INFO (TVE-202): Simulating Test: 22  Odometer: 1.2.1.5.3.1  Relative Cycle: 62  Time: 5360000.00 ps  Tests Passed 21 of 21, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 22  Odometer: 1.2.1.6.1.3  Relative Cycle: 64  Time: 5520000.00 ps  Tests Passed 21 of 21, Failed 0. 
+INFO (TVE-202): Simulating Test: 22  Odometer: 1.2.1.5.3.2  Relative Cycle: 64  Time: 5520000.00 ps  Tests Passed 21 of 21, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 22  Odometer: 1.2.1.6.1.4  Relative Cycle: 64  Time: 5520000.00 ps  Tests Passed 21 of 21, Failed 0. 
+INFO (TVE-202): Simulating Test: 22  Odometer: 1.2.1.5.3.3  Relative Cycle: 64  Time: 5520000.00 ps  Tests Passed 21 of 21, Failed 0. 
 
-INFO (TVE-211): Simulating Test: 22  Odometer: 1.2.1.6.1.5  Relative Cycle: 65  Time: 5600000.00 ps  Relative Scan: 22  Overlap Tests 22 and 23.  Tests Passed 21 of 21, Failed 0. 
+INFO (TVE-202): Simulating Test: 22  Odometer: 1.2.1.5.3.4  Relative Cycle: 64  Time: 5520000.00 ps  Tests Passed 21 of 21, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 23  Odometer: 1.2.1.6.2.1  Relative Cycle: 65  Time: 5600000.00 ps  Tests Passed 22 of 22, Failed 0. 
+INFO (TVE-211): Simulating Test: 22  Odometer: 1.2.1.5.3.5  Relative Cycle: 65  Time: 5600000.00 ps  Relative Scan: 22  Overlap Tests 22 and 23.  Tests Passed 21 of 21, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 23  Odometer: 1.2.1.6.2.2  Relative Cycle: 67  Time: 5760000.00 ps  Tests Passed 22 of 22, Failed 0. 
+INFO (TVE-202): Simulating Test: 23  Odometer: 1.2.1.5.4.1  Relative Cycle: 65  Time: 5600000.00 ps  Tests Passed 22 of 22, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 23  Odometer: 1.2.1.6.2.3  Relative Cycle: 67  Time: 5760000.00 ps  Tests Passed 22 of 22, Failed 0. 
+INFO (TVE-202): Simulating Test: 23  Odometer: 1.2.1.5.4.2  Relative Cycle: 67  Time: 5760000.00 ps  Tests Passed 22 of 22, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 23  Odometer: 1.2.1.6.2.4  Relative Cycle: 67  Time: 5760000.00 ps  Tests Passed 22 of 22, Failed 0. 
+INFO (TVE-202): Simulating Test: 23  Odometer: 1.2.1.5.4.3  Relative Cycle: 67  Time: 5760000.00 ps  Tests Passed 22 of 22, Failed 0. 
 
-INFO (TVE-211): Simulating Test: 23  Odometer: 1.2.1.6.2.5  Relative Cycle: 68  Time: 5840000.00 ps  Relative Scan: 23  Overlap Tests 23 and 24.  Tests Passed 22 of 22, Failed 0. 
+INFO (TVE-202): Simulating Test: 23  Odometer: 1.2.1.5.4.4  Relative Cycle: 67  Time: 5760000.00 ps  Tests Passed 22 of 22, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 24  Odometer: 1.2.1.6.3.1  Relative Cycle: 68  Time: 5840000.00 ps  Tests Passed 23 of 23, Failed 0. 
+INFO (TVE-211): Simulating Test: 23  Odometer: 1.2.1.5.4.5  Relative Cycle: 68  Time: 5840000.00 ps  Relative Scan: 23  Overlap Tests 23 and 24.  Tests Passed 22 of 22, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 24  Odometer: 1.2.1.6.3.2  Relative Cycle: 70  Time: 6000000.00 ps  Tests Passed 23 of 23, Failed 0. 
+INFO (TVE-202): Simulating Test: 24  Odometer: 1.2.1.5.5.1  Relative Cycle: 68  Time: 5840000.00 ps  Tests Passed 23 of 23, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 24  Odometer: 1.2.1.6.3.3  Relative Cycle: 70  Time: 6000000.00 ps  Tests Passed 23 of 23, Failed 0. 
+INFO (TVE-202): Simulating Test: 24  Odometer: 1.2.1.5.5.2  Relative Cycle: 70  Time: 6000000.00 ps  Tests Passed 23 of 23, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 24  Odometer: 1.2.1.6.3.4  Relative Cycle: 70  Time: 6000000.00 ps  Tests Passed 23 of 23, Failed 0. 
+INFO (TVE-202): Simulating Test: 24  Odometer: 1.2.1.5.5.3  Relative Cycle: 70  Time: 6000000.00 ps  Tests Passed 23 of 23, Failed 0. 
 
-INFO (TVE-211): Simulating Test: 24  Odometer: 1.2.1.6.3.5  Relative Cycle: 71  Time: 6080000.00 ps  Relative Scan: 24  Overlap Tests 24 and 25.  Tests Passed 23 of 23, Failed 0. 
+INFO (TVE-202): Simulating Test: 24  Odometer: 1.2.1.5.5.4  Relative Cycle: 70  Time: 6000000.00 ps  Tests Passed 23 of 23, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 25  Odometer: 1.2.1.6.4.1  Relative Cycle: 71  Time: 6080000.00 ps  Tests Passed 24 of 24, Failed 0. 
+INFO (TVE-211): Simulating Test: 24  Odometer: 1.2.1.5.5.5  Relative Cycle: 71  Time: 6080000.00 ps  Relative Scan: 24  Overlap Tests 24 and 25.  Tests Passed 23 of 23, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 25  Odometer: 1.2.1.6.4.2  Relative Cycle: 73  Time: 6240000.00 ps  Tests Passed 24 of 24, Failed 0. 
+INFO (TVE-202): Simulating Test: 25  Odometer: 1.2.1.5.6.1  Relative Cycle: 71  Time: 6080000.00 ps  Tests Passed 24 of 24, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 25  Odometer: 1.2.1.6.4.3  Relative Cycle: 73  Time: 6240000.00 ps  Tests Passed 24 of 24, Failed 0. 
+INFO (TVE-202): Simulating Test: 25  Odometer: 1.2.1.5.6.2  Relative Cycle: 73  Time: 6240000.00 ps  Tests Passed 24 of 24, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 25  Odometer: 1.2.1.6.4.4  Relative Cycle: 73  Time: 6240000.00 ps  Tests Passed 24 of 24, Failed 0. 
+INFO (TVE-202): Simulating Test: 25  Odometer: 1.2.1.5.6.3  Relative Cycle: 73  Time: 6240000.00 ps  Tests Passed 24 of 24, Failed 0. 
 
-INFO (TVE-211): Simulating Test: 25  Odometer: 1.2.1.6.4.5  Relative Cycle: 74  Time: 6320000.00 ps  Relative Scan: 25  Overlap Tests 25 and 26.  Tests Passed 24 of 24, Failed 0. 
+INFO (TVE-202): Simulating Test: 25  Odometer: 1.2.1.5.6.4  Relative Cycle: 73  Time: 6240000.00 ps  Tests Passed 24 of 24, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 26  Odometer: 1.2.1.6.5.1  Relative Cycle: 74  Time: 6320000.00 ps  Tests Passed 25 of 25, Failed 0. 
+INFO (TVE-211): Simulating Test: 25  Odometer: 1.2.1.5.6.5  Relative Cycle: 74  Time: 6320000.00 ps  Relative Scan: 25  Overlap Tests 25 and 26.  Tests Passed 24 of 24, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 26  Odometer: 1.2.1.6.5.2  Relative Cycle: 76  Time: 6480000.00 ps  Tests Passed 25 of 25, Failed 0. 
+INFO (TVE-202): Simulating Test: 26  Odometer: 1.2.1.5.7.1  Relative Cycle: 74  Time: 6320000.00 ps  Tests Passed 25 of 25, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 26  Odometer: 1.2.1.6.5.3  Relative Cycle: 76  Time: 6480000.00 ps  Tests Passed 25 of 25, Failed 0. 
+INFO (TVE-202): Simulating Test: 26  Odometer: 1.2.1.5.7.2  Relative Cycle: 76  Time: 6480000.00 ps  Tests Passed 25 of 25, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 26  Odometer: 1.2.1.6.5.4  Relative Cycle: 76  Time: 6480000.00 ps  Tests Passed 25 of 25, Failed 0. 
+INFO (TVE-202): Simulating Test: 26  Odometer: 1.2.1.5.7.3  Relative Cycle: 76  Time: 6480000.00 ps  Tests Passed 25 of 25, Failed 0. 
 
-INFO (TVE-211): Simulating Test: 26  Odometer: 1.2.1.6.5.5  Relative Cycle: 77  Time: 6560000.00 ps  Relative Scan: 26  Overlap Tests 26 and 27.  Tests Passed 25 of 25, Failed 0. 
+INFO (TVE-202): Simulating Test: 26  Odometer: 1.2.1.5.7.4  Relative Cycle: 76  Time: 6480000.00 ps  Tests Passed 25 of 25, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 27  Odometer: 1.2.1.6.6.1  Relative Cycle: 77  Time: 6560000.00 ps  Tests Passed 26 of 26, Failed 0. 
+INFO (TVE-211): Simulating Test: 26  Odometer: 1.2.1.5.7.5  Relative Cycle: 77  Time: 6560000.00 ps  Relative Scan: 26  Overlap Tests 26 and 27.  Tests Passed 25 of 25, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 27  Odometer: 1.2.1.6.6.2  Relative Cycle: 79  Time: 6720000.00 ps  Tests Passed 26 of 26, Failed 0. 
+INFO (TVE-202): Simulating Test: 27  Odometer: 1.2.1.5.8.1  Relative Cycle: 77  Time: 6560000.00 ps  Tests Passed 26 of 26, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 27  Odometer: 1.2.1.6.6.3  Relative Cycle: 79  Time: 6720000.00 ps  Tests Passed 26 of 26, Failed 0. 
+INFO (TVE-202): Simulating Test: 27  Odometer: 1.2.1.5.8.2  Relative Cycle: 79  Time: 6720000.00 ps  Tests Passed 26 of 26, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 27  Odometer: 1.2.1.6.6.4  Relative Cycle: 79  Time: 6720000.00 ps  Tests Passed 26 of 26, Failed 0. 
+INFO (TVE-202): Simulating Test: 27  Odometer: 1.2.1.5.8.3  Relative Cycle: 79  Time: 6720000.00 ps  Tests Passed 26 of 26, Failed 0. 
 
-INFO (TVE-211): Simulating Test: 27  Odometer: 1.2.1.6.6.5  Relative Cycle: 80  Time: 6800000.00 ps  Relative Scan: 27  Overlap Tests 27 and 28.  Tests Passed 26 of 26, Failed 0. 
+INFO (TVE-202): Simulating Test: 27  Odometer: 1.2.1.5.8.4  Relative Cycle: 79  Time: 6720000.00 ps  Tests Passed 26 of 26, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 28  Odometer: 1.2.1.6.7.1  Relative Cycle: 80  Time: 6800000.00 ps  Tests Passed 27 of 27, Failed 0. 
+INFO (TVE-211): Simulating Test: 27  Odometer: 1.2.1.5.8.5  Relative Cycle: 80  Time: 6800000.00 ps  Relative Scan: 27  Overlap Tests 27 and 28.  Tests Passed 26 of 26, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 28  Odometer: 1.2.1.6.7.2  Relative Cycle: 82  Time: 6960000.00 ps  Tests Passed 27 of 27, Failed 0. 
+INFO (TVE-202): Simulating Test: 28  Odometer: 1.2.1.5.9.1  Relative Cycle: 80  Time: 6800000.00 ps  Tests Passed 27 of 27, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 28  Odometer: 1.2.1.6.7.3  Relative Cycle: 82  Time: 6960000.00 ps  Tests Passed 27 of 27, Failed 0. 
+INFO (TVE-202): Simulating Test: 28  Odometer: 1.2.1.5.9.2  Relative Cycle: 82  Time: 6960000.00 ps  Tests Passed 27 of 27, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 28  Odometer: 1.2.1.6.7.4  Relative Cycle: 82  Time: 6960000.00 ps  Tests Passed 27 of 27, Failed 0. 
+INFO (TVE-202): Simulating Test: 28  Odometer: 1.2.1.5.9.3  Relative Cycle: 82  Time: 6960000.00 ps  Tests Passed 27 of 27, Failed 0. 
 
-INFO (TVE-211): Simulating Test: 28  Odometer: 1.2.1.6.7.5  Relative Cycle: 83  Time: 7040000.00 ps  Relative Scan: 28  Overlap Tests 28 and 29.  Tests Passed 27 of 27, Failed 0. 
+INFO (TVE-202): Simulating Test: 28  Odometer: 1.2.1.5.9.4  Relative Cycle: 82  Time: 6960000.00 ps  Tests Passed 27 of 27, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 29  Odometer: 1.2.1.6.8.1  Relative Cycle: 83  Time: 7040000.00 ps  Tests Passed 28 of 28, Failed 0. 
+INFO (TVE-211): Simulating Test: 28  Odometer: 1.2.1.5.9.5  Relative Cycle: 83  Time: 7040000.00 ps  Relative Scan: 28  Overlap Tests 28 and 29.  Tests Passed 27 of 27, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 29  Odometer: 1.2.1.6.8.2  Relative Cycle: 85  Time: 7200000.00 ps  Tests Passed 28 of 28, Failed 0. 
+INFO (TVE-202): Simulating Test: 29  Odometer: 1.2.1.5.10.1  Relative Cycle: 83  Time: 7040000.00 ps  Tests Passed 28 of 28, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 29  Odometer: 1.2.1.6.8.3  Relative Cycle: 85  Time: 7200000.00 ps  Tests Passed 28 of 28, Failed 0. 
+INFO (TVE-202): Simulating Test: 29  Odometer: 1.2.1.5.10.2  Relative Cycle: 85  Time: 7200000.00 ps  Tests Passed 28 of 28, Failed 0. 
 
-INFO (TVE-202): Simulating Test: 29  Odometer: 1.2.1.6.8.4  Relative Cycle: 85  Time: 7200000.00 ps  Tests Passed 28 of 28, Failed 0. 
+INFO (TVE-202): Simulating Test: 29  Odometer: 1.2.1.5.10.3  Relative Cycle: 85  Time: 7200000.00 ps  Tests Passed 28 of 28, Failed 0. 
 
-INFO (TVE-211): Simulating Test: 29  Odometer: 1.2.1.6.8.5  Relative Cycle: 86  Time: 7280000.00 ps  Relative Scan: 29  Tests Passed 28 of 28, Failed 0. 
+INFO (TVE-202): Simulating Test: 29  Odometer: 1.2.1.5.10.4  Relative Cycle: 85  Time: 7200000.00 ps  Tests Passed 28 of 28, Failed 0. 
 
-INFO (TVE-201): Simulation complete on vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.data.logic.ex1.ts2.verilog 
+INFO (TVE-211): Simulating Test: 29  Odometer: 1.2.1.5.10.5  Relative Cycle: 86  Time: 7280000.00 ps  Relative Scan: 29  Overlap Tests 29 and 30.  Tests Passed 28 of 28, Failed 0. 
 
-INFO (TVE-210): Results for vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.data.logic.ex1.ts2.verilog 
-                      Number of Cycles:           88 
-                      Number of Tests:            28 
-                        - Passed Tests:           28 
+INFO (TVE-202): Simulating Test: 30  Odometer: 1.2.1.5.11.1  Relative Cycle: 86  Time: 7280000.00 ps  Tests Passed 29 of 29, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 30  Odometer: 1.2.1.5.11.2  Relative Cycle: 88  Time: 7440000.00 ps  Tests Passed 29 of 29, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 30  Odometer: 1.2.1.5.11.3  Relative Cycle: 88  Time: 7440000.00 ps  Tests Passed 29 of 29, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 30  Odometer: 1.2.1.5.11.4  Relative Cycle: 88  Time: 7440000.00 ps  Tests Passed 29 of 29, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 30  Odometer: 1.2.1.5.11.5  Relative Cycle: 89  Time: 7520000.00 ps  Relative Scan: 30  Overlap Tests 30 and 31.  Tests Passed 29 of 29, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 31  Odometer: 1.2.1.5.12.1  Relative Cycle: 89  Time: 7520000.00 ps  Tests Passed 30 of 30, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 31  Odometer: 1.2.1.5.12.2  Relative Cycle: 91  Time: 7680000.00 ps  Tests Passed 30 of 30, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 31  Odometer: 1.2.1.5.12.3  Relative Cycle: 91  Time: 7680000.00 ps  Tests Passed 30 of 30, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 31  Odometer: 1.2.1.5.12.4  Relative Cycle: 91  Time: 7680000.00 ps  Tests Passed 30 of 30, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 31  Odometer: 1.2.1.5.12.5  Relative Cycle: 92  Time: 7760000.00 ps  Relative Scan: 31  Overlap Tests 31 and 32.  Tests Passed 30 of 30, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 32  Odometer: 1.2.1.5.13.1  Relative Cycle: 92  Time: 7760000.00 ps  Tests Passed 31 of 31, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 32  Odometer: 1.2.1.5.13.2  Relative Cycle: 94  Time: 7920000.00 ps  Tests Passed 31 of 31, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 32  Odometer: 1.2.1.5.13.3  Relative Cycle: 94  Time: 7920000.00 ps  Tests Passed 31 of 31, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 32  Odometer: 1.2.1.5.13.4  Relative Cycle: 94  Time: 7920000.00 ps  Tests Passed 31 of 31, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 32  Odometer: 1.2.1.5.13.5  Relative Cycle: 95  Time: 8000000.00 ps  Relative Scan: 32  Overlap Tests 32 and 33.  Tests Passed 31 of 31, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 33  Odometer: 1.2.1.5.14.1  Relative Cycle: 95  Time: 8000000.00 ps  Tests Passed 32 of 32, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 33  Odometer: 1.2.1.5.14.2  Relative Cycle: 97  Time: 8160000.00 ps  Tests Passed 32 of 32, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 33  Odometer: 1.2.1.5.14.3  Relative Cycle: 97  Time: 8160000.00 ps  Tests Passed 32 of 32, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 33  Odometer: 1.2.1.5.14.4  Relative Cycle: 97  Time: 8160000.00 ps  Tests Passed 32 of 32, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 33  Odometer: 1.2.1.5.14.5  Relative Cycle: 98  Time: 8240000.00 ps  Relative Scan: 33  Overlap Tests 33 and 34.  Tests Passed 32 of 32, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 34  Odometer: 1.2.1.5.15.1  Relative Cycle: 98  Time: 8240000.00 ps  Tests Passed 33 of 33, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 34  Odometer: 1.2.1.5.15.2  Relative Cycle: 100  Time: 8400000.00 ps  Tests Passed 33 of 33, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 34  Odometer: 1.2.1.5.15.3  Relative Cycle: 100  Time: 8400000.00 ps  Tests Passed 33 of 33, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 34  Odometer: 1.2.1.5.15.4  Relative Cycle: 100  Time: 8400000.00 ps  Tests Passed 33 of 33, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 34  Odometer: 1.2.1.5.15.5  Relative Cycle: 101  Time: 8480000.00 ps  Relative Scan: 34  Overlap Tests 34 and 35.  Tests Passed 33 of 33, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 35  Odometer: 1.2.1.5.16.1  Relative Cycle: 101  Time: 8480000.00 ps  Tests Passed 34 of 34, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 35  Odometer: 1.2.1.5.16.2  Relative Cycle: 103  Time: 8640000.00 ps  Tests Passed 34 of 34, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 35  Odometer: 1.2.1.5.16.3  Relative Cycle: 103  Time: 8640000.00 ps  Tests Passed 34 of 34, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 35  Odometer: 1.2.1.5.16.4  Relative Cycle: 103  Time: 8640000.00 ps  Tests Passed 34 of 34, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 35  Odometer: 1.2.1.5.16.5  Relative Cycle: 104  Time: 8720000.00 ps  Relative Scan: 35  Overlap Tests 35 and 36.  Tests Passed 34 of 34, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 36  Odometer: 1.2.1.6.1.1  Relative Cycle: 104  Time: 8720000.00 ps  Tests Passed 35 of 35, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 36  Odometer: 1.2.1.6.1.2  Relative Cycle: 106  Time: 8880000.00 ps  Tests Passed 35 of 35, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 36  Odometer: 1.2.1.6.1.3  Relative Cycle: 107  Time: 8960000.00 ps  Tests Passed 35 of 35, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 36  Odometer: 1.2.1.6.1.4  Relative Cycle: 107  Time: 8960000.00 ps  Tests Passed 35 of 35, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 36  Odometer: 1.2.1.6.1.5  Relative Cycle: 108  Time: 9040000.00 ps  Relative Scan: 36  Overlap Tests 36 and 37.  Tests Passed 35 of 35, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 37  Odometer: 1.2.1.6.2.1  Relative Cycle: 108  Time: 9040000.00 ps  Tests Passed 36 of 36, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 37  Odometer: 1.2.1.6.2.2  Relative Cycle: 110  Time: 9200000.00 ps  Tests Passed 36 of 36, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 37  Odometer: 1.2.1.6.2.3  Relative Cycle: 111  Time: 9280000.00 ps  Tests Passed 36 of 36, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 37  Odometer: 1.2.1.6.2.4  Relative Cycle: 111  Time: 9280000.00 ps  Tests Passed 36 of 36, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 37  Odometer: 1.2.1.6.2.5  Relative Cycle: 112  Time: 9360000.00 ps  Relative Scan: 37  Overlap Tests 37 and 38.  Tests Passed 36 of 36, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 38  Odometer: 1.2.1.7.1.1  Relative Cycle: 112  Time: 9360000.00 ps  Tests Passed 37 of 37, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 38  Odometer: 1.2.1.7.1.2  Relative Cycle: 114  Time: 9520000.00 ps  Tests Passed 37 of 37, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 38  Odometer: 1.2.1.7.1.3  Relative Cycle: 114  Time: 9520000.00 ps  Tests Passed 37 of 37, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 38  Odometer: 1.2.1.7.1.4  Relative Cycle: 115  Time: 9600000.00 ps  Relative Scan: 38  Overlap Tests 38 and 39.  Tests Passed 37 of 37, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 39  Odometer: 1.2.1.8.1.1  Relative Cycle: 115  Time: 9600000.00 ps  Tests Passed 38 of 38, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 39  Odometer: 1.2.1.8.1.2  Relative Cycle: 117  Time: 9760000.00 ps  Tests Passed 38 of 38, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 39  Odometer: 1.2.1.8.1.3  Relative Cycle: 117  Time: 9760000.00 ps  Tests Passed 38 of 38, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 39  Odometer: 1.2.1.8.1.4  Relative Cycle: 117  Time: 9760000.00 ps  Tests Passed 38 of 38, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 39  Odometer: 1.2.1.8.1.5  Relative Cycle: 118  Time: 9840000.00 ps  Relative Scan: 39  Overlap Tests 39 and 40.  Tests Passed 38 of 38, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 40  Odometer: 1.2.1.8.2.1  Relative Cycle: 118  Time: 9840000.00 ps  Tests Passed 39 of 39, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 40  Odometer: 1.2.1.8.2.2  Relative Cycle: 120  Time: 10000000.00 ps  Tests Passed 39 of 39, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 40  Odometer: 1.2.1.8.2.3  Relative Cycle: 120  Time: 10000000.00 ps  Tests Passed 39 of 39, Failed 0. 
+
+INFO (TVE-202): Simulating Test: 40  Odometer: 1.2.1.8.2.4  Relative Cycle: 120  Time: 10000000.00 ps  Tests Passed 39 of 39, Failed 0. 
+
+INFO (TVE-211): Simulating Test: 40  Odometer: 1.2.1.8.2.5  Relative Cycle: 121  Time: 10080000.00 ps  Relative Scan: 40  Tests Passed 39 of 39, Failed 0. 
+
+INFO (TVE-201): Simulation complete on vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.data.logic.ex1.ts2.verilog 
+
+INFO (TVE-210): Results for vector file: outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.data.logic.ex1.ts2.verilog 
+                      Number of Cycles:           123 
+                      Number of Tests:            39 
+                        - Passed Tests:           39 
                         - Failed Tests:           0 
-                      Number of Compares:         3320 
-                        - Good Compares:          3320 
+                      Number of Compares:         35412 
+                        - Good Compares:          35412 
                         - Miscompares:            0 
-                      Time:                       7520000.00 ps 
+                      Time:                       10320000.00 ps 
 
 
 INFO (TVE-209): Cumulative Results: 
                       Number of Files Simulated:  2 
-                      Total Number of Cycles:     94 
-                      Total Number of Tests:      29 
-                        - Total Passed Tests:     29 
+                      Total Number of Cycles:     129 
+                      Total Number of Tests:      40 
+                        - Total Passed Tests:     40 
                         - Total Failed Tests:     0 
-                      Total Number of Compares:   3407 
-                        - Total Good Compares:    3407 
+                      Total Number of Compares:   36062 
+                        - Total Good Compares:    36062 
                         - Total Miscompares:      0 
 
-Simulation complete via $finish(1) at time 7520 NS + 0
-./outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_atpg.mainsim.v:467       $finish; 
+Simulation complete via $finish(1) at time 10320 NS + 0
+./outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.multiplier_param_N128_atpg.mainsim.v:2265       $finish; 
+xcelium> ^C
 xcelium> exit
-xmsim: Memory Usage - Final: 68.6M, Peak: 68.6M, Peak virtual: 347.1M
-xmsim: CPU Usage - 0.0s system + 0.0s user = 0.0s total (1.1s, 4.3% cpu)
-TOOL:	xrun(64)	23.03-s003: Exiting on Jun 11, 2026 at 20:16:11 -03  (total: 00:00:02)
+xmsim: Memory Usage - Final: 92.0M, Peak: 98.9M, Peak virtual: 377.2M
+xmsim: CPU Usage - 0.4s system + 0.3s user = 0.6s total (208.4s, 0.3% cpu)
+TOOL:	xrun(64)	23.03-s003: Exiting on Jun 18, 2026 at 20:02:30 -03  (total: 00:03:28)

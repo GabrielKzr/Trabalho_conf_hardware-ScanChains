@@ -671,20 +671,20 @@
 "object":"/designs/multiplier_param_N16/instances_seq/count_reg_0",
 "type":"instance"},
 {"index": "1", 
- "date": "Tue Jun 16 23:07:52 UTC 2026",
- "seconds": 1781651272.660198,
+ "date": "Thu Jun 18 22:52:37 UTC 2026",
+ "seconds": 1781823157.35139,
  "netlist": "fv/multiplier_param_N16/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/gabriel.kaizer/Downloads/testa_padrao_scan/synthesis/fv/multiplier_param_N16/fv_map.v.gz", 
- "netlist_mtime": "1781651272", 
- "netlist_timestamp": "Tue Jun 16 23:07:52 UTC 2026", 
- "netlist_size": "5950", 
- "netlist_cksum": "193839653", 
+ "netlist_mtime": "1781823156", 
+ "netlist_timestamp": "Thu Jun 18 22:52:36 UTC 2026", 
+ "netlist_size": "5951", 
+ "netlist_cksum": "4195482820", 
  "design_name": "multiplier_param_N16", 
  "synth_workdir": "/home/gabriel.kaizer/Downloads/testa_padrao_scan/synthesis", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.429927 
+ "write_verif_file_runtime": 0.350732 
  }
 ]

@@ -30,6 +30,7 @@ A FSM possui três estados: IDLE, RUN e DONE. Ao receber start, o módulo carreg
 
 | N   | Saída (bits) | Cell Count | Cell Area | Net Area | Total Area | Slack (ps) |
 |-----|-------------:|-----------:|----------:|---------:|-----------:|-----------:|
+| 8   | 16           | 129        | 849.160   | 289.451  | 1138.611   | 459        |
 | 16  | 32           | 309        | 1731.600  | 682.132  | 2413.732   | 0          |
 | 32  | 64           | 746        | 3621.800  | 1610.773 | 5232.573   | 1          |
 | 64  | 128          | 1563       | 7335.120  | 3366.741 | 10701.861  | 0          |
@@ -47,6 +48,7 @@ O caminho crítico permanece curto o suficiente para manter fechamento em 500 MH
 
 | N   | Scan chain (FFs) | Padrões gerados | Coverage final | Scan cycles | Faults totais |
 |-----|------------------:|----------------:|---------------:|------------:|--------------:|
+| 8   | 46                | 16              | 99,99%         | 92          | ~1.280        |
 | 16  | 87                | 26              | 99,99%         | 174         | ~2.800        |
 | 32  | 175               | 29              | 99,99%         | 350         | ~5.500        |
 | 64  | 329               | 34              | 99,99%         | 658         | ~12.926       |
@@ -91,6 +93,7 @@ O fluxo é controlado por um Makefile e inclui síntese lógica (Genus), ATPG (M
 Executa todas as etapas do projeto:
 
 ```bash
+make N=8
 make N=16
 make N=32
 make N=64
@@ -128,3 +131,10 @@ make clean
 ```
 
 São removidos arquivos temporários, logs, bancos de dados do Genus, resultados do Modus e bibliotecas de simulação do Xcelium.
+
+## Observações
+
+Algumas observações relevantes observadas na execução dos scripts de simulação
+
+- Não é possível executar a simulação de geração de scan chains com o módulo `alu core`, pois ele não possui flib flop, logo não é possível adicionar o multiplexador
+- Algumas simulações executadas no xcelium (multiplicador de 8 bits e 128 bits) podem ser observadas nas imagens `xcelium_multiplier_8N` e `xcelium_multiplier_128N` com os padrões de testes aplicados automaticamente via script

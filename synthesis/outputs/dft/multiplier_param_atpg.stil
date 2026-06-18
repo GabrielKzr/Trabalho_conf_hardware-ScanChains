@@ -1,138 +1,18 @@
 STIL 1.0 { Design 2005; } 
 Header {
-    Title "CTL for design 'multiplier_param_N128'";
-    Date  "Tue Jun 16 20:16:04 -03 2026";
+    Title "CTL for design 'multiplier_param_N8'";
+    Date  "Thu Jun 18 20:11:41 -03 2026";
     Source "Cadence Design Systems Genus 21.12-s068_1 STIL output";
 }
 Signals {
-    "in1[127]" In; "in1[126]" In; "in1[125]" In;  
-    "in1[124]" In; "in1[123]" In; "in1[122]" In; "in1[121]" In;  
-    "in1[120]" In; "in1[119]" In; "in1[118]" In; "in1[117]" In;  
-    "in1[116]" In; "in1[115]" In; "in1[114]" In; "in1[113]" In;  
-    "in1[112]" In; "in1[111]" In; "in1[110]" In; "in1[109]" In;  
-    "in1[108]" In; "in1[107]" In; "in1[106]" In; "in1[105]" In;  
-    "in1[104]" In; "in1[103]" In; "in1[102]" In; "in1[101]" In;  
-    "in1[100]" In; "in1[99]" In; "in1[98]" In; "in1[97]" In;  
-    "in1[96]" In; "in1[95]" In; "in1[94]" In; "in1[93]" In;  
-    "in1[92]" In; "in1[91]" In; "in1[90]" In; "in1[89]" In;  
-    "in1[88]" In; "in1[87]" In; "in1[86]" In; "in1[85]" In;  
-    "in1[84]" In; "in1[83]" In; "in1[82]" In; "in1[81]" In;  
-    "in1[80]" In; "in1[79]" In; "in1[78]" In; "in1[77]" In;  
-    "in1[76]" In; "in1[75]" In; "in1[74]" In; "in1[73]" In;  
-    "in1[72]" In; "in1[71]" In; "in1[70]" In; "in1[69]" In;  
-    "in1[68]" In; "in1[67]" In; "in1[66]" In; "in1[65]" In;  
-    "in1[64]" In; "in1[63]" In; "in1[62]" In; "in1[61]" In;  
-    "in1[60]" In; "in1[59]" In; "in1[58]" In; "in1[57]" In;  
-    "in1[56]" In; "in1[55]" In; "in1[54]" In; "in1[53]" In;  
-    "in1[52]" In; "in1[51]" In; "in1[50]" In; "in1[49]" In;  
-    "in1[48]" In; "in1[47]" In; "in1[46]" In; "in1[45]" In;  
-    "in1[44]" In; "in1[43]" In; "in1[42]" In; "in1[41]" In;  
-    "in1[40]" In; "in1[39]" In; "in1[38]" In; "in1[37]" In;  
-    "in1[36]" In; "in1[35]" In; "in1[34]" In; "in1[33]" In;  
-    "in1[32]" In; "in1[31]" In; "in1[30]" In; "in1[29]" In;  
-    "in1[28]" In; "in1[27]" In; "in1[26]" In; "in1[25]" In;  
-    "in1[24]" In; "in1[23]" In; "in1[22]" In; "in1[21]" In;  
-    "in1[20]" In; "in1[19]" In; "in1[18]" In; "in1[17]" In;  
-    "in1[16]" In; "in1[15]" In; "in1[14]" In; "in1[13]" In;  
-    "in1[12]" In; "in1[11]" In; "in1[10]" In; "in1[9]" In;  
-    "in1[8]" In; "in1[7]" In; "in1[6]" In; "in1[5]" In;  
+    "in1[7]" In; "in1[6]" In; "in1[5]" In;  
     "in1[4]" In; "in1[3]" In; "in1[2]" In; "in1[1]" In;  
-    "in1[0]" In; "in2[127]" In; "in2[126]" In; "in2[125]" In;  
-    "in2[124]" In; "in2[123]" In; "in2[122]" In; "in2[121]" In;  
-    "in2[120]" In; "in2[119]" In; "in2[118]" In; "in2[117]" In;  
-    "in2[116]" In; "in2[115]" In; "in2[114]" In; "in2[113]" In;  
-    "in2[112]" In; "in2[111]" In; "in2[110]" In; "in2[109]" In;  
-    "in2[108]" In; "in2[107]" In; "in2[106]" In; "in2[105]" In;  
-    "in2[104]" In; "in2[103]" In; "in2[102]" In; "in2[101]" In;  
-    "in2[100]" In; "in2[99]" In; "in2[98]" In; "in2[97]" In;  
-    "in2[96]" In; "in2[95]" In; "in2[94]" In; "in2[93]" In;  
-    "in2[92]" In; "in2[91]" In; "in2[90]" In; "in2[89]" In;  
-    "in2[88]" In; "in2[87]" In; "in2[86]" In; "in2[85]" In;  
-    "in2[84]" In; "in2[83]" In; "in2[82]" In; "in2[81]" In;  
-    "in2[80]" In; "in2[79]" In; "in2[78]" In; "in2[77]" In;  
-    "in2[76]" In; "in2[75]" In; "in2[74]" In; "in2[73]" In;  
-    "in2[72]" In; "in2[71]" In; "in2[70]" In; "in2[69]" In;  
-    "in2[68]" In; "in2[67]" In; "in2[66]" In; "in2[65]" In;  
-    "in2[64]" In; "in2[63]" In; "in2[62]" In; "in2[61]" In;  
-    "in2[60]" In; "in2[59]" In; "in2[58]" In; "in2[57]" In;  
-    "in2[56]" In; "in2[55]" In; "in2[54]" In; "in2[53]" In;  
-    "in2[52]" In; "in2[51]" In; "in2[50]" In; "in2[49]" In;  
-    "in2[48]" In; "in2[47]" In; "in2[46]" In; "in2[45]" In;  
-    "in2[44]" In; "in2[43]" In; "in2[42]" In; "in2[41]" In;  
-    "in2[40]" In; "in2[39]" In; "in2[38]" In; "in2[37]" In;  
-    "in2[36]" In; "in2[35]" In; "in2[34]" In; "in2[33]" In;  
-    "in2[32]" In; "in2[31]" In; "in2[30]" In; "in2[29]" In;  
-    "in2[28]" In; "in2[27]" In; "in2[26]" In; "in2[25]" In;  
-    "in2[24]" In; "in2[23]" In; "in2[22]" In; "in2[21]" In;  
-    "in2[20]" In; "in2[19]" In; "in2[18]" In; "in2[17]" In;  
-    "in2[16]" In; "in2[15]" In; "in2[14]" In; "in2[13]" In;  
-    "in2[12]" In; "in2[11]" In; "in2[10]" In; "in2[9]" In;  
-    "in2[8]" In; "in2[7]" In; "in2[6]" In; "in2[5]" In;  
+    "in1[0]" In; "in2[7]" In; "in2[6]" In; "in2[5]" In;  
     "in2[4]" In; "in2[3]" In; "in2[2]" In; "in2[1]" In;  
     "in2[0]" In; "start" In; "reset" In; "clk" In;  
     "chip_scan_se" In; "chip_scan_tm" In; "chip_sdi_1" In;  
  
-    "out[255]" Out; "out[254]" Out; "out[253]" Out;  
-    "out[252]" Out; "out[251]" Out; "out[250]" Out; "out[249]" Out;  
-    "out[248]" Out; "out[247]" Out; "out[246]" Out; "out[245]" Out;  
-    "out[244]" Out; "out[243]" Out; "out[242]" Out; "out[241]" Out;  
-    "out[240]" Out; "out[239]" Out; "out[238]" Out; "out[237]" Out;  
-    "out[236]" Out; "out[235]" Out; "out[234]" Out; "out[233]" Out;  
-    "out[232]" Out; "out[231]" Out; "out[230]" Out; "out[229]" Out;  
-    "out[228]" Out; "out[227]" Out; "out[226]" Out; "out[225]" Out;  
-    "out[224]" Out; "out[223]" Out; "out[222]" Out; "out[221]" Out;  
-    "out[220]" Out; "out[219]" Out; "out[218]" Out; "out[217]" Out;  
-    "out[216]" Out; "out[215]" Out; "out[214]" Out; "out[213]" Out;  
-    "out[212]" Out; "out[211]" Out; "out[210]" Out; "out[209]" Out;  
-    "out[208]" Out; "out[207]" Out; "out[206]" Out; "out[205]" Out;  
-    "out[204]" Out; "out[203]" Out; "out[202]" Out; "out[201]" Out;  
-    "out[200]" Out; "out[199]" Out; "out[198]" Out; "out[197]" Out;  
-    "out[196]" Out; "out[195]" Out; "out[194]" Out; "out[193]" Out;  
-    "out[192]" Out; "out[191]" Out; "out[190]" Out; "out[189]" Out;  
-    "out[188]" Out; "out[187]" Out; "out[186]" Out; "out[185]" Out;  
-    "out[184]" Out; "out[183]" Out; "out[182]" Out; "out[181]" Out;  
-    "out[180]" Out; "out[179]" Out; "out[178]" Out; "out[177]" Out;  
-    "out[176]" Out; "out[175]" Out; "out[174]" Out; "out[173]" Out;  
-    "out[172]" Out; "out[171]" Out; "out[170]" Out; "out[169]" Out;  
-    "out[168]" Out; "out[167]" Out; "out[166]" Out; "out[165]" Out;  
-    "out[164]" Out; "out[163]" Out; "out[162]" Out; "out[161]" Out;  
-    "out[160]" Out; "out[159]" Out; "out[158]" Out; "out[157]" Out;  
-    "out[156]" Out; "out[155]" Out; "out[154]" Out; "out[153]" Out;  
-    "out[152]" Out; "out[151]" Out; "out[150]" Out; "out[149]" Out;  
-    "out[148]" Out; "out[147]" Out; "out[146]" Out; "out[145]" Out;  
-    "out[144]" Out; "out[143]" Out; "out[142]" Out; "out[141]" Out;  
-    "out[140]" Out; "out[139]" Out; "out[138]" Out; "out[137]" Out;  
-    "out[136]" Out; "out[135]" Out; "out[134]" Out; "out[133]" Out;  
-    "out[132]" Out; "out[131]" Out; "out[130]" Out; "out[129]" Out;  
-    "out[128]" Out; "out[127]" Out; "out[126]" Out; "out[125]" Out;  
-    "out[124]" Out; "out[123]" Out; "out[122]" Out; "out[121]" Out;  
-    "out[120]" Out; "out[119]" Out; "out[118]" Out; "out[117]" Out;  
-    "out[116]" Out; "out[115]" Out; "out[114]" Out; "out[113]" Out;  
-    "out[112]" Out; "out[111]" Out; "out[110]" Out; "out[109]" Out;  
-    "out[108]" Out; "out[107]" Out; "out[106]" Out; "out[105]" Out;  
-    "out[104]" Out; "out[103]" Out; "out[102]" Out; "out[101]" Out;  
-    "out[100]" Out; "out[99]" Out; "out[98]" Out; "out[97]" Out;  
-    "out[96]" Out; "out[95]" Out; "out[94]" Out; "out[93]" Out;  
-    "out[92]" Out; "out[91]" Out; "out[90]" Out; "out[89]" Out;  
-    "out[88]" Out; "out[87]" Out; "out[86]" Out; "out[85]" Out;  
-    "out[84]" Out; "out[83]" Out; "out[82]" Out; "out[81]" Out;  
-    "out[80]" Out; "out[79]" Out; "out[78]" Out; "out[77]" Out;  
-    "out[76]" Out; "out[75]" Out; "out[74]" Out; "out[73]" Out;  
-    "out[72]" Out; "out[71]" Out; "out[70]" Out; "out[69]" Out;  
-    "out[68]" Out; "out[67]" Out; "out[66]" Out; "out[65]" Out;  
-    "out[64]" Out; "out[63]" Out; "out[62]" Out; "out[61]" Out;  
-    "out[60]" Out; "out[59]" Out; "out[58]" Out; "out[57]" Out;  
-    "out[56]" Out; "out[55]" Out; "out[54]" Out; "out[53]" Out;  
-    "out[52]" Out; "out[51]" Out; "out[50]" Out; "out[49]" Out;  
-    "out[48]" Out; "out[47]" Out; "out[46]" Out; "out[45]" Out;  
-    "out[44]" Out; "out[43]" Out; "out[42]" Out; "out[41]" Out;  
-    "out[40]" Out; "out[39]" Out; "out[38]" Out; "out[37]" Out;  
-    "out[36]" Out; "out[35]" Out; "out[34]" Out; "out[33]" Out;  
-    "out[32]" Out; "out[31]" Out; "out[30]" Out; "out[29]" Out;  
-    "out[28]" Out; "out[27]" Out; "out[26]" Out; "out[25]" Out;  
-    "out[24]" Out; "out[23]" Out; "out[22]" Out; "out[21]" Out;  
-    "out[20]" Out; "out[19]" Out; "out[18]" Out; "out[17]" Out;  
-    "out[16]" Out; "out[15]" Out; "out[14]" Out; "out[13]" Out;  
+    "out[15]" Out; "out[14]" Out; "out[13]" Out;  
     "out[12]" Out; "out[11]" Out; "out[10]" Out; "out[9]" Out;  
     "out[8]" Out; "out[7]" Out; "out[6]" Out; "out[5]" Out;  
     "out[4]" Out; "out[3]" Out; "out[2]" Out; "out[1]" Out;  
@@ -140,146 +20,26 @@ Signals {
 }
 SignalGroups {
   // ... no bidirectional signals found
-  "all_inputs" = ' "in1[127]" + "in1[126]" + "in1[125]" +  
-    "in1[124]" + "in1[123]" + "in1[122]" + "in1[121]" +  
-    "in1[120]" + "in1[119]" + "in1[118]" + "in1[117]" +  
-    "in1[116]" + "in1[115]" + "in1[114]" + "in1[113]" +  
-    "in1[112]" + "in1[111]" + "in1[110]" + "in1[109]" +  
-    "in1[108]" + "in1[107]" + "in1[106]" + "in1[105]" +  
-    "in1[104]" + "in1[103]" + "in1[102]" + "in1[101]" +  
-    "in1[100]" + "in1[99]" + "in1[98]" + "in1[97]" +  
-    "in1[96]" + "in1[95]" + "in1[94]" + "in1[93]" +  
-    "in1[92]" + "in1[91]" + "in1[90]" + "in1[89]" +  
-    "in1[88]" + "in1[87]" + "in1[86]" + "in1[85]" +  
-    "in1[84]" + "in1[83]" + "in1[82]" + "in1[81]" +  
-    "in1[80]" + "in1[79]" + "in1[78]" + "in1[77]" +  
-    "in1[76]" + "in1[75]" + "in1[74]" + "in1[73]" +  
-    "in1[72]" + "in1[71]" + "in1[70]" + "in1[69]" +  
-    "in1[68]" + "in1[67]" + "in1[66]" + "in1[65]" +  
-    "in1[64]" + "in1[63]" + "in1[62]" + "in1[61]" +  
-    "in1[60]" + "in1[59]" + "in1[58]" + "in1[57]" +  
-    "in1[56]" + "in1[55]" + "in1[54]" + "in1[53]" +  
-    "in1[52]" + "in1[51]" + "in1[50]" + "in1[49]" +  
-    "in1[48]" + "in1[47]" + "in1[46]" + "in1[45]" +  
-    "in1[44]" + "in1[43]" + "in1[42]" + "in1[41]" +  
-    "in1[40]" + "in1[39]" + "in1[38]" + "in1[37]" +  
-    "in1[36]" + "in1[35]" + "in1[34]" + "in1[33]" +  
-    "in1[32]" + "in1[31]" + "in1[30]" + "in1[29]" +  
-    "in1[28]" + "in1[27]" + "in1[26]" + "in1[25]" +  
-    "in1[24]" + "in1[23]" + "in1[22]" + "in1[21]" +  
-    "in1[20]" + "in1[19]" + "in1[18]" + "in1[17]" +  
-    "in1[16]" + "in1[15]" + "in1[14]" + "in1[13]" +  
-    "in1[12]" + "in1[11]" + "in1[10]" + "in1[9]" +  
-    "in1[8]" + "in1[7]" + "in1[6]" + "in1[5]" +  
+  "all_inputs" = ' "in1[7]" + "in1[6]" + "in1[5]" +  
     "in1[4]" + "in1[3]" + "in1[2]" + "in1[1]" +  
-    "in1[0]" + "in2[127]" + "in2[126]" + "in2[125]" +  
-    "in2[124]" + "in2[123]" + "in2[122]" + "in2[121]" +  
-    "in2[120]" + "in2[119]" + "in2[118]" + "in2[117]" +  
-    "in2[116]" + "in2[115]" + "in2[114]" + "in2[113]" +  
-    "in2[112]" + "in2[111]" + "in2[110]" + "in2[109]" +  
-    "in2[108]" + "in2[107]" + "in2[106]" + "in2[105]" +  
-    "in2[104]" + "in2[103]" + "in2[102]" + "in2[101]" +  
-    "in2[100]" + "in2[99]" + "in2[98]" + "in2[97]" +  
-    "in2[96]" + "in2[95]" + "in2[94]" + "in2[93]" +  
-    "in2[92]" + "in2[91]" + "in2[90]" + "in2[89]" +  
-    "in2[88]" + "in2[87]" + "in2[86]" + "in2[85]" +  
-    "in2[84]" + "in2[83]" + "in2[82]" + "in2[81]" +  
-    "in2[80]" + "in2[79]" + "in2[78]" + "in2[77]" +  
-    "in2[76]" + "in2[75]" + "in2[74]" + "in2[73]" +  
-    "in2[72]" + "in2[71]" + "in2[70]" + "in2[69]" +  
-    "in2[68]" + "in2[67]" + "in2[66]" + "in2[65]" +  
-    "in2[64]" + "in2[63]" + "in2[62]" + "in2[61]" +  
-    "in2[60]" + "in2[59]" + "in2[58]" + "in2[57]" +  
-    "in2[56]" + "in2[55]" + "in2[54]" + "in2[53]" +  
-    "in2[52]" + "in2[51]" + "in2[50]" + "in2[49]" +  
-    "in2[48]" + "in2[47]" + "in2[46]" + "in2[45]" +  
-    "in2[44]" + "in2[43]" + "in2[42]" + "in2[41]" +  
-    "in2[40]" + "in2[39]" + "in2[38]" + "in2[37]" +  
-    "in2[36]" + "in2[35]" + "in2[34]" + "in2[33]" +  
-    "in2[32]" + "in2[31]" + "in2[30]" + "in2[29]" +  
-    "in2[28]" + "in2[27]" + "in2[26]" + "in2[25]" +  
-    "in2[24]" + "in2[23]" + "in2[22]" + "in2[21]" +  
-    "in2[20]" + "in2[19]" + "in2[18]" + "in2[17]" +  
-    "in2[16]" + "in2[15]" + "in2[14]" + "in2[13]" +  
-    "in2[12]" + "in2[11]" + "in2[10]" + "in2[9]" +  
-    "in2[8]" + "in2[7]" + "in2[6]" + "in2[5]" +  
+    "in1[0]" + "in2[7]" + "in2[6]" + "in2[5]" +  
     "in2[4]" + "in2[3]" + "in2[2]" + "in2[1]" +  
     "in2[0]" + "start" + "reset" + "clk" +  
-    "chip_scan_se" + "chip_scan_tm" + "chip_sdi_1" '; // #signals=262
-  "all_outputs" = ' "out[255]" + "out[254]" + "out[253]" +  
-    "out[252]" + "out[251]" + "out[250]" + "out[249]" +  
-    "out[248]" + "out[247]" + "out[246]" + "out[245]" +  
-    "out[244]" + "out[243]" + "out[242]" + "out[241]" +  
-    "out[240]" + "out[239]" + "out[238]" + "out[237]" +  
-    "out[236]" + "out[235]" + "out[234]" + "out[233]" +  
-    "out[232]" + "out[231]" + "out[230]" + "out[229]" +  
-    "out[228]" + "out[227]" + "out[226]" + "out[225]" +  
-    "out[224]" + "out[223]" + "out[222]" + "out[221]" +  
-    "out[220]" + "out[219]" + "out[218]" + "out[217]" +  
-    "out[216]" + "out[215]" + "out[214]" + "out[213]" +  
-    "out[212]" + "out[211]" + "out[210]" + "out[209]" +  
-    "out[208]" + "out[207]" + "out[206]" + "out[205]" +  
-    "out[204]" + "out[203]" + "out[202]" + "out[201]" +  
-    "out[200]" + "out[199]" + "out[198]" + "out[197]" +  
-    "out[196]" + "out[195]" + "out[194]" + "out[193]" +  
-    "out[192]" + "out[191]" + "out[190]" + "out[189]" +  
-    "out[188]" + "out[187]" + "out[186]" + "out[185]" +  
-    "out[184]" + "out[183]" + "out[182]" + "out[181]" +  
-    "out[180]" + "out[179]" + "out[178]" + "out[177]" +  
-    "out[176]" + "out[175]" + "out[174]" + "out[173]" +  
-    "out[172]" + "out[171]" + "out[170]" + "out[169]" +  
-    "out[168]" + "out[167]" + "out[166]" + "out[165]" +  
-    "out[164]" + "out[163]" + "out[162]" + "out[161]" +  
-    "out[160]" + "out[159]" + "out[158]" + "out[157]" +  
-    "out[156]" + "out[155]" + "out[154]" + "out[153]" +  
-    "out[152]" + "out[151]" + "out[150]" + "out[149]" +  
-    "out[148]" + "out[147]" + "out[146]" + "out[145]" +  
-    "out[144]" + "out[143]" + "out[142]" + "out[141]" +  
-    "out[140]" + "out[139]" + "out[138]" + "out[137]" +  
-    "out[136]" + "out[135]" + "out[134]" + "out[133]" +  
-    "out[132]" + "out[131]" + "out[130]" + "out[129]" +  
-    "out[128]" + "out[127]" + "out[126]" + "out[125]" +  
-    "out[124]" + "out[123]" + "out[122]" + "out[121]" +  
-    "out[120]" + "out[119]" + "out[118]" + "out[117]" +  
-    "out[116]" + "out[115]" + "out[114]" + "out[113]" +  
-    "out[112]" + "out[111]" + "out[110]" + "out[109]" +  
-    "out[108]" + "out[107]" + "out[106]" + "out[105]" +  
-    "out[104]" + "out[103]" + "out[102]" + "out[101]" +  
-    "out[100]" + "out[99]" + "out[98]" + "out[97]" +  
-    "out[96]" + "out[95]" + "out[94]" + "out[93]" +  
-    "out[92]" + "out[91]" + "out[90]" + "out[89]" +  
-    "out[88]" + "out[87]" + "out[86]" + "out[85]" +  
-    "out[84]" + "out[83]" + "out[82]" + "out[81]" +  
-    "out[80]" + "out[79]" + "out[78]" + "out[77]" +  
-    "out[76]" + "out[75]" + "out[74]" + "out[73]" +  
-    "out[72]" + "out[71]" + "out[70]" + "out[69]" +  
-    "out[68]" + "out[67]" + "out[66]" + "out[65]" +  
-    "out[64]" + "out[63]" + "out[62]" + "out[61]" +  
-    "out[60]" + "out[59]" + "out[58]" + "out[57]" +  
-    "out[56]" + "out[55]" + "out[54]" + "out[53]" +  
-    "out[52]" + "out[51]" + "out[50]" + "out[49]" +  
-    "out[48]" + "out[47]" + "out[46]" + "out[45]" +  
-    "out[44]" + "out[43]" + "out[42]" + "out[41]" +  
-    "out[40]" + "out[39]" + "out[38]" + "out[37]" +  
-    "out[36]" + "out[35]" + "out[34]" + "out[33]" +  
-    "out[32]" + "out[31]" + "out[30]" + "out[29]" +  
-    "out[28]" + "out[27]" + "out[26]" + "out[25]" +  
-    "out[24]" + "out[23]" + "out[22]" + "out[21]" +  
-    "out[20]" + "out[19]" + "out[18]" + "out[17]" +  
-    "out[16]" + "out[15]" + "out[14]" + "out[13]" +  
+    "chip_scan_se" + "chip_scan_tm" + "chip_sdi_1" '; // #signals=22
+  "all_outputs" = ' "out[15]" + "out[14]" + "out[13]" +  
     "out[12]" + "out[11]" + "out[10]" + "out[9]" +  
     "out[8]" + "out[7]" + "out[6]" + "out[5]" +  
     "out[4]" + "out[3]" + "out[2]" + "out[1]" +  
-    "out[0]" + "done" + "chip_sdo_1" '; // #signals=258
-  "all_ports" =  ' "all_inputs"+ "all_outputs" '; // #signals=520
-  "_pi" = '"all_inputs"'; // #signals=262
-  "_po" = '"all_outputs"'; // #signals=258
+    "out[0]" + "done" + "chip_sdo_1" '; // #signals=18
+  "all_ports" =  ' "all_inputs"+ "all_outputs" '; // #signals=40
+  "_pi" = '"all_inputs"'; // #signals=22
+  "_po" = '"all_outputs"'; // #signals=18
   "_si" = '"chip_sdi_1"'; // #signals=1
   "_so" = '"chip_sdo_1"'; // #signals=1
 }
 ScanStructures {
     ScanChain "AutoChain_1" {
-      ScanLength 650;
+      ScanLength 46;
      ScanIn "chip_sdi_1" ; 
      ScanOut "chip_sdo_1" ; 
      ScanEnable "chip_scan_se";
@@ -338,15 +98,15 @@ Procedures {
         F { 
              "chip_scan_tm"=1; 
           }
-        V { "_pi"=\r262 #; "_po"=\r258 #; }
+        V { "_pi"=\r22 #; "_po"=\r18 #; }
     }
     "capture_clk" {
         W "_default_WFT_";
         F { 
             "chip_scan_tm"=1; 
         }
-        "forcePI": V { "_pi"=\r262 #; }
-        "measurePO": V { "_po"=\r258 #; }
+        "forcePI": V { "_pi"=\r22 #; }
+        "measurePO": V { "_po"=\r18 #; }
         "pulse": V { "clk"=P; }
     }
     "capture_reset" {
@@ -354,8 +114,8 @@ Procedures {
         F { 
             "chip_scan_tm"=1; 
         }
-        "forcePI": V { "_pi"=\r262 #; }
-        "measurePO": V { "_po"=\r258 #; }
+        "forcePI": V { "_pi"=\r22 #; }
+        "measurePO": V { "_po"=\r18 #; }
         "pulse": V { "reset"=P; }
     }
 }

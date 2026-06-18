@@ -31,9 +31,9 @@ file delete -force $WORKDIR/testresults;                  # Delete Test Output F
 # BUILD THE LOGIC MODEL
 #-------------------------------------------------------------------------------
 build_model \
-    -cell	 multiplier_param_N128 \
+    -cell	 multiplier_param_N8 \
     -techlib	 /soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v,/soft64/design-kits/stm/65nm-cmos065_536/CLOCK65GPSVT_3.1/behaviour/verilog/CLOCK65GPSVT.v,/soft64/design-kits/stm/65nm-cmos065_536/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z_7.0/behaviour/verilog/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z.v \
-    -designsource	 $WORKDIR/multiplier_param_N128.test_netlist.v \
+    -designsource	 $WORKDIR/multiplier_param_N8.test_netlist.v \
     -allowmissingmodules	 no \
     -messagecounteach	 100 \
 
@@ -44,7 +44,7 @@ check_log log_build_model
 #-------------------------------------------------------------------------------
 build_testmode \
     -testmode	 FULLSCAN \
-    -assignfile	 $WORKDIR/multiplier_param_N128.FULLSCAN.pinassign \
+    -assignfile	 $WORKDIR/multiplier_param_N8.FULLSCAN.pinassign \
     -modedef	 FULLSCAN \
  
 check_log log_build_testmode_FULLSCAN
@@ -79,36 +79,36 @@ check_log log_build_faultmodel
 # ATPG - TEST GENERATION
 #-------------------------------------------------------------------------------
 create_logic_tests \
-    -experiment	 multiplier_param_N128_atpg \
+    -experiment	 multiplier_param_N8_atpg \
     -testmode	 FULLSCAN \
 
-check_log log_create_logic_tests_FULLSCAN_multiplier_param_N128_atpg
+check_log log_create_logic_tests_FULLSCAN_multiplier_param_N8_atpg
 
 #-------------------------------------------------------------------------------
 # ATPG - Report the Scan and Capture Switching
 #-------------------------------------------------------------------------------
 write_toggle_gram \
-    -experiment	 multiplier_param_N128_atpg \
+    -experiment	 multiplier_param_N8_atpg \
     -testmode	 FULLSCAN \
 
 #-------------------------------------------------------------------------------
 # VERILOG VECTORS - For PARALLEL Simulation
 #-------------------------------------------------------------------------------
 write_vectors \
-    -inexperiment	 multiplier_param_N128_atpg \
+    -inexperiment	 multiplier_param_N8_atpg \
     -testmode	 FULLSCAN \
     -language	 verilog \
     -scanformat	 parallel \
 
-check_log log_write_vectors_FULLSCAN_multiplier_param_N128_atpg
+check_log log_write_vectors_FULLSCAN_multiplier_param_N8_atpg
 
 #-------------------------------------------------------------------------------
 # ATPG - Save Experiment to the Master Database for the Testmode
 #-------------------------------------------------------------------------------
 commit_tests \
-    -inexperiment	 multiplier_param_N128_atpg \
+    -inexperiment	 multiplier_param_N8_atpg \
     -testmode	 FULLSCAN 
 
-check_log log_commit_tests_FULLSCAN_multiplier_param_N128_atpg
+check_log log_commit_tests_FULLSCAN_multiplier_param_N8_atpg
 
 exit

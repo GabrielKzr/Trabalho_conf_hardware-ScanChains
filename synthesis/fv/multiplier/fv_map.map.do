@@ -126,9 +126,11 @@ add mapped point par_out_b[13]/q par_out_b_reg_13/Q  -type DFF DFF
 add mapped point par_out_b[14]/q par_out_b_reg_14/Q  -type DFF DFF
 add mapped point par_out_b[15]/q par_out_b_reg_15/Q  -type DFF DFF
 add mapped point state[0]/q state_reg_0/Q  -type DFF DFF
-add mapped point state[1]/q state_reg_1/Q  -type DFF DFF
 add mapped point count[4]/q count_reg_4/Q  -type DFF DFF
-add mapped point out[23]/q out_reg_23/Q  -type DFF DFF
+add mapped point state[1]/q state_reg_1/Q  -type DFF DFF
+add mapped point count[3]/q count_reg_3/Q  -type DFF DFF
+add mapped point out[22]/q out_reg_22/Q  -type DFF DFF
+add mapped point out[14]/q out_reg_14/Q  -type DFF DFF
 add mapped point out[15]/q out_reg_15/Q  -type DFF DFF
 add mapped point out[16]/q out_reg_16/Q  -type DFF DFF
 add mapped point out[17]/q out_reg_17/Q  -type DFF DFF
@@ -136,8 +138,8 @@ add mapped point out[18]/q out_reg_18/Q  -type DFF DFF
 add mapped point out[19]/q out_reg_19/Q  -type DFF DFF
 add mapped point out[20]/q out_reg_20/Q  -type DFF DFF
 add mapped point out[21]/q out_reg_21/Q  -type DFF DFF
-add mapped point out[22]/q out_reg_22/Q  -type DFF DFF
-add mapped point out[14]/q out_reg_14/Q  -type DFF DFF
+add mapped point out[13]/q out_reg_13/Q  -type DFF DFF
+add mapped point out[23]/q out_reg_23/Q  -type DFF DFF
 add mapped point out[24]/q out_reg_24/Q  -type DFF DFF
 add mapped point out[25]/q out_reg_25/Q  -type DFF DFF
 add mapped point out[26]/q out_reg_26/Q  -type DFF DFF
@@ -145,7 +147,6 @@ add mapped point out[27]/q out_reg_27/Q  -type DFF DFF
 add mapped point out[28]/q out_reg_28/Q  -type DFF DFF
 add mapped point out[29]/q out_reg_29/Q  -type DFF DFF
 add mapped point out[30]/q out_reg_30/Q  -type DFF DFF
-add mapped point out[31]/q out_reg_31/Q  -type DFF DFF
 add mapped point out[8]/q out_reg_8/Q  -type DFF DFF
 add mapped point out[0]/q out_reg_0/Q  -type DFF DFF
 add mapped point out[1]/q out_reg_1/Q  -type DFF DFF
@@ -155,14 +156,13 @@ add mapped point out[4]/q out_reg_4/Q  -type DFF DFF
 add mapped point out[5]/q out_reg_5/Q  -type DFF DFF
 add mapped point out[6]/q out_reg_6/Q  -type DFF DFF
 add mapped point out[7]/q out_reg_7/Q  -type DFF DFF
-add mapped point out[13]/q out_reg_13/Q  -type DFF DFF
+add mapped point out[31]/q out_reg_31/Q  -type DFF DFF
 add mapped point out[9]/q out_reg_9/Q  -type DFF DFF
 add mapped point out[10]/q out_reg_10/Q  -type DFF DFF
 add mapped point out[11]/q out_reg_11/Q  -type DFF DFF
 add mapped point out[12]/q out_reg_12/Q  -type DFF DFF
-add mapped point count[3]/q count_reg_3/Q  -type DFF DFF
-add mapped point count[1]/q count_reg_1/Q  -type DFF DFF
 add mapped point count[2]/q count_reg_2/Q  -type DFF DFF
+add mapped point count[1]/q count_reg_1/Q  -type DFF DFF
 add mapped point count[0]/q count_reg_0/Q  -type DFF DFF
 
 

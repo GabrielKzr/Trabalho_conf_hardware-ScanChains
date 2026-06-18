@@ -40,3 +40,5 @@ include dft_setup.tcl
 ## 6) build physical synthesis environment
 write_netlist [current_design] > busca.v
 write_snapshot  -innovus -directory layout -tag logical [current_design]
+
+exit

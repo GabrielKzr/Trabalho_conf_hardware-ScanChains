@@ -16,8 +16,8 @@ xrun \
    +access+rwc \
    +xmstatus \
    +xm64bit \
-   +TESTFILE1=$WORKDIR/testresults/verilog/VER.FULLSCAN_TIMED.multiplier_param_N128_atpg.data.scan.ex1.ts1.verilog \
-   +TESTFILE2=$WORKDIR/testresults/verilog/VER.FULLSCAN_TIMED.multiplier_param_N128_atpg.data.logic.ex1.ts2.verilog \
+   +TESTFILE1=$WORKDIR/testresults/verilog/VER.FULLSCAN_TIMED.multiplier_param_N8_atpg.data.scan.ex1.ts1.verilog \
+   +TESTFILE2=$WORKDIR/testresults/verilog/VER.FULLSCAN_TIMED.multiplier_param_N8_atpg.data.logic.ex1.ts2.verilog \
    +HEARTBEAT \
    +FAILSET \
    +xmtimescale+1ns/1ps \
@@ -29,11 +29,11 @@ xrun \
    +sdf_file+DEFAULT.sdf \
    +xmerror+CUSFNF \
    +define+TIMING \
-   +xmlibdirname+$WORKDIR/Inca_libs_20_16_04 \
+   +xmlibdirname+$WORKDIR/Inca_libs_20_11_41 \
    -l $WORKDIR/ncverilog_FULLSCAN_TIMED.log \
   -v /soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v \
   -v /soft64/design-kits/stm/65nm-cmos065_536/CLOCK65GPSVT_3.1/behaviour/verilog/CLOCK65GPSVT.v \
   -v /soft64/design-kits/stm/65nm-cmos065_536/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z_7.0/behaviour/verilog/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z.v \
-$WORKDIR/multiplier_param_N128.test_netlist.v \
-$WORKDIR/testresults/verilog/VER.FULLSCAN_TIMED.multiplier_param_N128_atpg.mainsim.v
+$WORKDIR/multiplier_param_N8.test_netlist.v \
+$WORKDIR/testresults/verilog/VER.FULLSCAN_TIMED.multiplier_param_N8_atpg.mainsim.v
 

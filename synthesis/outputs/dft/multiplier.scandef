@@ -95,7 +95,7 @@ SCANCHAINS 1 ;
        par_out_b_reg_13 ( IN TI ) ( OUT Q ) 
        par_out_b_reg_14 ( IN TI ) ( OUT Q ) 
        par_out_b_reg_15 ( IN TI ) ( OUT Q ) 
-       state_reg_0 ( IN TI ) ( OUT Q ) 
+       state_reg_0 ( IN TI ) ( OUT TQ ) 
        state_reg_1 ( IN TI ) ( OUT TQ ) 
     + STOP PIN chip_sdo_1
 ;

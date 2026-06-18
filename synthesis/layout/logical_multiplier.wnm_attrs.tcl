@@ -118,9 +118,11 @@ set_db pin:multiplier/par_out_a_reg_30/QN .original_name {par_out_a[30]/q}
 set_db pin:multiplier/par_out_a_reg_31/QN .original_name {par_out_a[31]/q}
 set_db pin:multiplier/par_out_b_reg_15/Q .original_name {par_out_b[15]/q}
 set_db pin:multiplier/state_reg_0/Q .original_name {state[0]/q}
-set_db pin:multiplier/state_reg_1/Q .original_name {state[1]/q}
 set_db pin:multiplier/count_reg_4/Q .original_name {count[4]/q}
-set_db pin:multiplier/out_reg_23/Q .original_name {out[23]/q}
+set_db pin:multiplier/state_reg_1/Q .original_name {state[1]/q}
+set_db pin:multiplier/count_reg_3/Q .original_name {count[3]/q}
+set_db pin:multiplier/out_reg_22/Q .original_name {out[22]/q}
+set_db pin:multiplier/out_reg_14/Q .original_name {out[14]/q}
 set_db pin:multiplier/out_reg_15/Q .original_name {out[15]/q}
 set_db pin:multiplier/out_reg_16/Q .original_name {out[16]/q}
 set_db pin:multiplier/out_reg_17/Q .original_name {out[17]/q}
@@ -128,8 +130,8 @@ set_db pin:multiplier/out_reg_18/Q .original_name {out[18]/q}
 set_db pin:multiplier/out_reg_19/Q .original_name {out[19]/q}
 set_db pin:multiplier/out_reg_20/Q .original_name {out[20]/q}
 set_db pin:multiplier/out_reg_21/Q .original_name {out[21]/q}
-set_db pin:multiplier/out_reg_22/Q .original_name {out[22]/q}
-set_db pin:multiplier/out_reg_14/Q .original_name {out[14]/q}
+set_db pin:multiplier/out_reg_13/Q .original_name {out[13]/q}
+set_db pin:multiplier/out_reg_23/Q .original_name {out[23]/q}
 set_db pin:multiplier/out_reg_24/Q .original_name {out[24]/q}
 set_db pin:multiplier/out_reg_25/Q .original_name {out[25]/q}
 set_db pin:multiplier/out_reg_26/Q .original_name {out[26]/q}
@@ -137,7 +139,6 @@ set_db pin:multiplier/out_reg_27/Q .original_name {out[27]/q}
 set_db pin:multiplier/out_reg_28/Q .original_name {out[28]/q}
 set_db pin:multiplier/out_reg_29/Q .original_name {out[29]/q}
 set_db pin:multiplier/out_reg_30/Q .original_name {out[30]/q}
-set_db pin:multiplier/out_reg_31/Q .original_name {out[31]/q}
 set_db pin:multiplier/out_reg_8/Q .original_name {out[8]/q}
 set_db pin:multiplier/out_reg_0/Q .original_name {out[0]/q}
 set_db pin:multiplier/out_reg_1/Q .original_name {out[1]/q}
@@ -147,12 +148,11 @@ set_db pin:multiplier/out_reg_4/Q .original_name {out[4]/q}
 set_db pin:multiplier/out_reg_5/Q .original_name {out[5]/q}
 set_db pin:multiplier/out_reg_6/Q .original_name {out[6]/q}
 set_db pin:multiplier/out_reg_7/Q .original_name {out[7]/q}
-set_db pin:multiplier/out_reg_13/Q .original_name {out[13]/q}
+set_db pin:multiplier/out_reg_31/Q .original_name {out[31]/q}
 set_db pin:multiplier/out_reg_9/Q .original_name {out[9]/q}
 set_db pin:multiplier/out_reg_10/Q .original_name {out[10]/q}
 set_db pin:multiplier/out_reg_11/Q .original_name {out[11]/q}
 set_db pin:multiplier/out_reg_12/Q .original_name {out[12]/q}
-set_db pin:multiplier/count_reg_3/Q .original_name {count[3]/q}
-set_db pin:multiplier/count_reg_1/Q .original_name {count[1]/q}
 set_db pin:multiplier/count_reg_2/Q .original_name {count[2]/q}
+set_db pin:multiplier/count_reg_1/Q .original_name {count[1]/q}
 set_db pin:multiplier/count_reg_0/Q .original_name {count[0]/q}
